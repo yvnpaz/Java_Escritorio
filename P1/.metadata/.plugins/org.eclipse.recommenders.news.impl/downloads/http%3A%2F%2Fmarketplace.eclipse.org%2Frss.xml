@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8" ?><rss version="2.0" xml:base="http://marketplace.eclipse.org/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Eclipse Plugins, Bundles and Products - Eclipse Marketplace</title>
+    <link>http://marketplace.eclipse.org/</link>
+    <description></description>
+    <language>en</language>
+     <atom:link href="http://marketplace.eclipse.org/rss.xml" rel="self" type="application/rss+xml" />
+      <item>
+    <title>EGit - Git Team Provider</title>
+    <link>http://marketplace.eclipse.org/content/egit-git-team-provider</link>
+    <description>&lt;div class=&quot;field field-name-field-resource-image field-type-image field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;img class=&quot;img-responsive&quot; src=&quot;http://marketplace.eclipse.org/sites/default/files/egit64.png&quot; width=&quot;64&quot; height=&quot;64&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-created field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Created:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Fri, 2010-06-18 16:30&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-updated field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Updated:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Thu, 2016-09-22 04:57&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-submitted-by field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Submitted by:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/user/caniszczyk/listings&quot; title=&quot;Chris Aniszczyk&quot;&gt;Chris Aniszczyk&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- google_ad_section_start --&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;EGit is an Eclipse Team provider for the Git version control system. Git is a distributed SCM, which means every developer has a full copy of all history of every revision of the code, making queries against the history very fast and versatile. The EGit project is implementing Eclipse tooling on top of the JGit Java implementation of Git.&lt;/p&gt;
+&lt;p&gt;To get started, check out our user guide: &lt;a href=&quot;http://wiki.eclipse.org/EGit/User_Guide&quot;&gt;http://wiki.eclipse.org/EGit/User_Guide&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;If you have any questions, please use our support forum: &lt;a href=&quot;http://www.eclipse.org/forums/index.php?t=thread&amp;amp;frm_id=48&quot;&gt;http://www.eclipse.org/forums/index.php?t=thread&amp;amp;frm_id=48&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- google_ad_section_end --&gt;</description>
+     <pubDate>Fri, 18 Jun 2010 20:30:26 +0000</pubDate>
+ <dc:creator>caniszczyk</dc:creator>
+ <guid isPermaLink="false">1336 at http://marketplace.eclipse.org</guid>
+ <comments>http://marketplace.eclipse.org/content/egit-git-team-provider#comments</comments>
+  </item>
+  <item>
+    <title>Webclipse</title>
+    <link>http://marketplace.eclipse.org/content/webclipse</link>
+    <description>&lt;div class=&quot;field field-name-field-resource-image field-type-image field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;img class=&quot;img-responsive&quot; src=&quot;http://marketplace.eclipse.org/sites/default/files/webclipse110x80_1.png&quot; width=&quot;100&quot; height=&quot;73&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-created field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Created:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Mon, 2015-07-27 09:32&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-updated field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Updated:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Wed, 2016-09-21 18:31&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-submitted-by field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Submitted by:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/user/twebbcke/listings&quot; title=&quot;Tim Webb&quot;&gt;Tim Webb&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- google_ad_section_start --&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;From JSjet with TypeScript and JavaScript to Live Preview, from Breadcrumbs to an enhanced Project Explorer, &lt;strong&gt;Webclipse&lt;/strong&gt; powers up Eclipse for the full-stack developer.  Web developers can now get outstanding web development, from rapid validation, syntax coloring, call hierarchies, content assist to refactoring, outline views, and more.&lt;/p&gt;
+&lt;p&gt;Included in Webclipse:&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;&lt;strong&gt;JSjet for Eclipse&lt;/strong&gt; gives you a jet engine to power your TypeScript &amp;amp; JavaScript coding - no more does JS in Eclipse need to be a second class citizen! Includes support for node.js and now TypeScript!&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;JavaScript Debugger&lt;/strong&gt; lets you find and fix bugs in your JavaScript right inside your Eclipse IDE.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;CodeLive w/Live Preview&lt;/strong&gt; lets you see changes inside Firefox, Chrome, Edge and Safari simultaneously while you change HTML, CSS and JSP files!&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Emmet&lt;/strong&gt; lets you type short css-like expressions to expand rich blocks in HTML and CSS.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Slack Code Sharing&lt;/strong&gt; lets you share snippets of code directly from within Eclipse to your teammates.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Breadcrumb&lt;/strong&gt; toolbar simplifies navigation to related elements in your workspace right next to your active editor.&lt;/li&gt;
+&lt;li&gt;Not to mention other power-ups like the &lt;strong&gt;Minimap&lt;/strong&gt; and the &lt;strong&gt;Project Explorer+&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Stay tuned.  We have exciting updates coming frequently!&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- google_ad_section_end --&gt;</description>
+     <pubDate>Mon, 27 Jul 2015 13:32:00 +0000</pubDate>
+ <dc:creator>twebbcke</dc:creator>
+ <guid isPermaLink="false">2456312 at http://marketplace.eclipse.org</guid>
+ <comments>http://marketplace.eclipse.org/content/webclipse#comments</comments>
+  </item>
+  <item>
+    <title>Yang IDE</title>
+    <link>http://marketplace.eclipse.org/content/yang-ide</link>
+    <description>&lt;div class=&quot;field field-name-field-resource-image field-type-image field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;img class=&quot;img-responsive&quot; src=&quot;http://marketplace.eclipse.org/sites/default/files/default_images/default_2.png&quot; width=&quot;110&quot; height=&quot;80&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-created field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Created:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Tue, 2016-09-20 11:59&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-updated field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Updated:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Wed, 2016-09-21 15:29&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-submitted-by field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Submitted by:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/user/dkarrhx4/listings&quot; title=&quot;David M. Karr&quot;&gt;David M. Karr&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- google_ad_section_start --&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;The Yang IDE plugin is used for viewing and editing YANG model files, in the format as specified at &lt;a href=&quot;https://tools.ietf.org/html/rfc6020&quot;&gt;https://tools.ietf.org/html/rfc6020&lt;/a&gt; .&lt;/p&gt;
+&lt;p&gt;This project is associated with the OpenDaylight project, a Software-Defined Networking framework often used with OpenStack.  It uses the Yang parser that is part of OpenDaylight, but it can be used to view and edit YANG model files without otherwise downloading or installing OpenDaylight.&lt;/p&gt;
+&lt;p&gt;Creating a Yang Project with the plugin creates a skeleton project using a Maven POM file, which specifies the OpenDaylight components that are used to compile the YANG model files. This can be used outside of the plugin to generate the Java code associated with the Yang models, using the specified code generator. These steps are not required to utilize the plugin only for viewing and editing YANG models.&lt;/p&gt;
+&lt;p&gt;The following is a short list of provided features:&lt;br /&gt;
+* Intelligent completion of YANG keywords, import file names, and user-defined types and components&lt;br /&gt;
+* Completions can be scoped to defined namespace prefixes&lt;br /&gt;
+* Immediate reporting of syntactical and semantic errors in current YANG file in editor, as typical Eclipse error markers&lt;br /&gt;
+* YANG import file candidates can be obtained from Maven dependencies&lt;br /&gt;
+* Tooltips of referenced components show description property of defined component&lt;br /&gt;
+* A keyboard shortcut (and menu item) can be used to navigate to the definition of a referenced import file or component, even if obtained from a Maven dependency&lt;br /&gt;
+* In addition to the text view, a rudimentary UML-like view of the model can be rendered. This is a &quot;live&quot; view, which can be rearranged and edited, and will immediately reflect changes from the text view&lt;br /&gt;
+* The Yin (XML) view of the model can also be shown&lt;/p&gt;
+&lt;p&gt;The plugin can be installed from the Marketplace client, or using the supplied update site.  In addition, other installation instructions are provided at &lt;a href=&quot;http://docs.opendaylight.org/en/stable-boron/getting-started-guide/project-specific-guides/yangide.html&quot;&gt;http://docs.opendaylight.org/en/stable-boron/getting-started-guide/proje...&lt;/a&gt; .&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- google_ad_section_end --&gt;</description>
+     <pubDate>Tue, 20 Sep 2016 15:59:45 +0000</pubDate>
+ <dc:creator>dkarrhx4</dc:creator>
+ <guid isPermaLink="false">3081653 at http://marketplace.eclipse.org</guid>
+ <comments>http://marketplace.eclipse.org/content/yang-ide#comments</comments>
+  </item>
+  <item>
+    <title>Eclipse Tomcat Plugin</title>
+    <link>http://marketplace.eclipse.org/content/eclipse-tomcat-plugin</link>
+    <description>&lt;div class=&quot;field field-name-field-resource-image field-type-image field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;img class=&quot;img-responsive&quot; src=&quot;http://marketplace.eclipse.org/sites/default/files/start.gif&quot; width=&quot;16&quot; height=&quot;16&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-created field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Created:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Fri, 2014-10-10 03:13&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-updated field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Updated:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Wed, 2016-09-21 11:11&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-submitted-by field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Submitted by:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/user/mkeunecke/listings&quot; title=&quot;Markus Keunecke&quot;&gt;Markus Keunecke&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- google_ad_section_start --&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;The Eclipse Tomcat Plugin provides simple integration of a tomcat servlet container for the development of java web applications.&lt;/p&gt;
+&lt;p&gt;This project is the successor of the original Sysdeo Tomcat Plugin.&lt;/p&gt;
+&lt;p&gt;Bug reports should go to our project on SourceForge: &lt;a href=&quot;https://sourceforge.net/p/tomcatplugin/tickets/new/&quot;&gt;https://sourceforge.net/p/tomcatplugin/tickets/new/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Feel free to join our IRC channel #tomcatplugin on Freenode.&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- google_ad_section_end --&gt;</description>
+     <pubDate>Fri, 10 Oct 2014 07:13:45 +0000</pubDate>
+ <dc:creator>mkeunecke</dc:creator>
+ <guid isPermaLink="false">1963651 at http://marketplace.eclipse.org</guid>
+ <comments>http://marketplace.eclipse.org/content/eclipse-tomcat-plugin#comments</comments>
+  </item>
+  <item>
+    <title>Code Sharing for Slack</title>
+    <link>http://marketplace.eclipse.org/content/code-sharing-slack</link>
+    <description>&lt;div class=&quot;field field-name-field-resource-image field-type-image field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;img class=&quot;img-responsive&quot; src=&quot;http://marketplace.eclipse.org/sites/default/files/ecs.png&quot; width=&quot;110&quot; height=&quot;80&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-created field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Created:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Mon, 2015-10-26 10:10&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-updated field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Updated:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Wed, 2016-09-21 07:16&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-submitted-by field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Submitted by:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/user/twebbcke/listings&quot; title=&quot;Tim Webb&quot;&gt;Tim Webb&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- google_ad_section_start --&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;Code Sharing for Slack provides code sharing to your &lt;strong&gt;#Slack&lt;/strong&gt; channel automatically!  100% free, installable separably from the &lt;a href=&quot;https://www.genuitec.com/products/webclipse/&quot;&gt;Webclipse&lt;/a&gt; suite.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.genuitec.com/wp-content/uploads/2016/06/howto_new.gif&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;If you have Slack for Eclipse installed and a teammate shares code with you, your Eclipse can offer opening the same code being discussed.&lt;/p&gt;
+&lt;p&gt;Made available for free, for unlimited usage.  &lt;a href=&quot;https://www.genuitec.com/products/webclipse/pricing/&quot;&gt;Learn more&lt;/a&gt; about other always free Webclipse features as well as some other great features as well!&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- google_ad_section_end --&gt;</description>
+     <pubDate>Mon, 26 Oct 2015 14:10:50 +0000</pubDate>
+ <dc:creator>twebbcke</dc:creator>
+ <guid isPermaLink="false">2582095 at http://marketplace.eclipse.org</guid>
+ <comments>http://marketplace.eclipse.org/content/code-sharing-slack#comments</comments>
+  </item>
+  <item>
+    <title>Gerrit Workflow for Eclipse</title>
+    <link>http://marketplace.eclipse.org/content/gerrit-workflow-eclipse</link>
+    <description>&lt;div class=&quot;field field-name-field-resource-image field-type-image field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;img class=&quot;img-responsive&quot; src=&quot;http://marketplace.eclipse.org/sites/default/files/gerritworkflow110.png&quot; width=&quot;110&quot; height=&quot;80&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-created field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Created:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Tue, 2015-10-27 09:20&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-updated field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Updated:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Wed, 2016-09-21 07:16&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-submitted-by field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Submitted by:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/user/twebbcke/listings&quot; title=&quot;Tim Webb&quot;&gt;Tim Webb&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- google_ad_section_start --&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;If you use Gerrit code review and repository management for Git, you’ll love our Gerrit Workflow. We’ve simplified the process of creating a continuously deliverable product. 100% free, now, it’s a breeze to instantly fetch changes and switch between multiple feature and stable branches.&lt;/p&gt;
+&lt;p&gt;&lt;img width=&quot;600&quot; src=&quot;https://resources.cloud.genuitec.com/wp-content/uploads/2015/10/Gerrit-Branching1.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Installable separably from the &lt;a href=&quot;https://www.genuitec.com/products/webclipse/&quot;&gt;Webclipse&lt;/a&gt; suite, learn how tools like Gerrit Workflow in Webclipse provide great power for &lt;a href=&quot;https://www.genuitec.com/products/webclipse/pricing/&quot;&gt;free&lt;/a&gt; each month.&lt;/p&gt;
+&lt;p&gt;With Gerrit Workflow for Eclipse, you can simply:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Create Change Branches&lt;/strong&gt;&lt;br /&gt;Use change branches to avoid dependencies between commits. Create a change branch every time you start working on a bug fix or a small feature. Set up a target stable branch and use Push to Upstream.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Create Feature Branches&lt;/strong&gt;&lt;br /&gt;Use feature branches to keep work on new features out of the stable branch until the code matures enough. Create a new feature branch for each new feature and enjoy using Push to Upstream.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Commit Changes for Review&lt;/strong&gt;&lt;br /&gt;If you use Gerrit Workflow to switch between branches, the repository is always correctly configured to push upstream. Bye, bye Push to Gerrit, welcome Commit and Push.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Fetch Code Changes&lt;/strong&gt;&lt;br /&gt;We’ve simplified the process of downloading code changes. Just select a change you want from the list of open changes and choose the patchset version.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Create and Push Tags&lt;/strong&gt;&lt;br /&gt;Use this Gerrit Workflow option as a great way to tag multiple repositories at once.&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- google_ad_section_end --&gt;</description>
+     <pubDate>Tue, 27 Oct 2015 13:20:17 +0000</pubDate>
+ <dc:creator>twebbcke</dc:creator>
+ <guid isPermaLink="false">2583696 at http://marketplace.eclipse.org</guid>
+ <comments>http://marketplace.eclipse.org/content/gerrit-workflow-eclipse#comments</comments>
+  </item>
+  <item>
+    <title>DSL Forge</title>
+    <link>http://marketplace.eclipse.org/content/dsl-forge</link>
+    <description>&lt;div class=&quot;field field-name-field-resource-image field-type-image field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;img class=&quot;img-responsive&quot; src=&quot;http://marketplace.eclipse.org/sites/default/files/dslforge_0.png&quot; width=&quot;110&quot; height=&quot;39&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-created field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Created:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Sun, 2016-01-17 16:46&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-updated field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Updated:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Wed, 2016-09-21 05:03&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-submitted-by field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Submitted by:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/user/alajmi/listings&quot; title=&quot;Amine Lajmi&quot;&gt;Amine Lajmi&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- google_ad_section_start --&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;DSL Forge is a framework for the development of domain-specific language (DSL) editors for web applications and cloud IDEs. The framework allows building web-based textual editors from ANTLR grammars. From the grammar specification, a JavaScript parser and lexer are automatically generated and embedded into Cloud9’s ACE editor.&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- google_ad_section_end --&gt;</description>
+     <pubDate>Sun, 17 Jan 2016 21:46:08 +0000</pubDate>
+ <dc:creator>alajmi</dc:creator>
+ <guid isPermaLink="false">2685378 at http://marketplace.eclipse.org</guid>
+ <comments>http://marketplace.eclipse.org/content/dsl-forge#comments</comments>
+  </item>
+  <item>
+    <title>GotoEditor</title>
+    <link>http://marketplace.eclipse.org/content/gotoeditor</link>
+    <description>&lt;div class=&quot;field field-name-field-resource-image field-type-image field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;img class=&quot;img-responsive&quot; src=&quot;http://marketplace.eclipse.org/sites/default/files/default_images/default_2.png&quot; width=&quot;110&quot; height=&quot;80&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-created field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Created:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Wed, 2014-07-02 03:58&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-updated field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Updated:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Tue, 2016-09-20 22:38&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-submitted-by field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Submitted by:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/user/jjixiufgmailcom/listings&quot; title=&quot;jixiuf jixiufgmail.com&quot;&gt;jixiuf jixiufgmail.com&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- google_ad_section_start --&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;This little plugin helps you to&lt;br /&gt;
+1. open selected file with your prefered external editor&lt;br /&gt;
+   (it will auto refresh the file  in eclipse when you close your external editor, and auto refresh each 30 seconds)&lt;br /&gt;
+2. open shell in current selected file path.&lt;br /&gt;
+3. browse resources with the &#039;Explorer&#039; of your platform  &lt;/p&gt;
+&lt;p&gt;source is on &lt;a href=&quot;https://github.com/emacs-java/eclipse_goto_editor&quot;&gt;https://github.com/emacs-java/eclipse_goto_editor&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- google_ad_section_end --&gt;</description>
+     <pubDate>Wed, 02 Jul 2014 07:58:48 +0000</pubDate>
+ <dc:creator>jjixiufgmailcom</dc:creator>
+ <guid isPermaLink="false">1777902 at http://marketplace.eclipse.org</guid>
+ <comments>http://marketplace.eclipse.org/content/gotoeditor#comments</comments>
+  </item>
+  <item>
+    <title>Unvired Modeler for UMP v3</title>
+    <link>http://marketplace.eclipse.org/content/unvired-modeler-ump-v3</link>
+    <description>&lt;div class=&quot;field field-name-field-resource-image field-type-image field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;img class=&quot;img-responsive&quot; src=&quot;http://marketplace.eclipse.org/sites/default/files/Un%20Vired_Logo%20_Small%2072dip.jpg&quot; width=&quot;110&quot; height=&quot;65&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-created field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Created:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Sat, 2016-09-17 05:31&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-updated field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Updated:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Tue, 2016-09-20 10:39&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-submitted-by field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Submitted by:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/user/uinc/listings&quot; title=&quot;Srini Subramanian&quot;&gt;Srini Subramanian&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- google_ad_section_start --&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;The Unvired Modeler v3 is used to model and develop mobile and web applications in Java and JavaScript.  These applications are deployed on the Unvired Mobile/Digital Platform v3.  &lt;/p&gt;
+&lt;p&gt;Important: Please uncheck &quot;Group Items by Category&quot; to install.  This version is to be installed for use with UMP v3.&lt;/p&gt;
+&lt;p&gt;The Modeler can be used to:&lt;br /&gt;
+a.  Create the landscape and connect to systems like SAP, Salesforce etc&lt;br /&gt;
+b.  Browse and add backend functions&lt;br /&gt;
+c.  Map Input and Output Structures&lt;br /&gt;
+d. Generate and customize code&lt;br /&gt;
+e. Debug and test the functionality&lt;br /&gt;
+f.  Deploy and configure on the UMP&lt;/p&gt;
+&lt;p&gt;For more details and documentation visit: &lt;a href=&quot;http://developer.unvired.com&quot;&gt;http://developer.unvired.com&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- google_ad_section_end --&gt;</description>
+     <pubDate>Sat, 17 Sep 2016 09:31:25 +0000</pubDate>
+ <dc:creator>uinc</dc:creator>
+ <guid isPermaLink="false">3076374 at http://marketplace.eclipse.org</guid>
+ <comments>http://marketplace.eclipse.org/content/unvired-modeler-ump-v3#comments</comments>
+  </item>
+  <item>
+    <title>EGradle</title>
+    <link>http://marketplace.eclipse.org/content/egradle</link>
+    <description>&lt;div class=&quot;field field-name-field-resource-image field-type-image field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;img class=&quot;img-responsive&quot; src=&quot;http://marketplace.eclipse.org/sites/default/files/egradle-banner-image.png&quot; width=&quot;110&quot; height=&quot;50&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-created field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Created:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Tue, 2016-09-13 14:26&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-updated field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Updated:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Tue, 2016-09-20 03:06&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-submitted-by field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Submitted by:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/user/atregnaghi/listings&quot; title=&quot;Albert Tregnaghi&quot;&gt;Albert Tregnaghi&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- google_ad_section_start --&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;&lt;strong&gt;EGradle is a lightweight gradle integration for eclipse&lt;/strong&gt;&lt;br /&gt;
+Code, Issues and more information can be found at &lt;a href=&quot;https://github.com/de-jcup/egradle&quot;&gt;https://github.com/de-jcup/egradle&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;&lt;em&gt;Parallel working with console and IDE:&lt;/em&gt;&lt;br /&gt;
+in contrast to other gradle integrations egradle does simply use the same project setups for eclipse as gradle itself proposes - so a &quot;gradlew cleanEclipse eclipse&quot; call on console simply refreshes your eclipse settings and does not destroy your workspace any more...
+&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Its just another run as ... :&lt;/em&gt;  EGradle supports own launch configurations , so launching, management and editing take place as usual.
+&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;One click features:&lt;/em&gt; It provides &quot;refresh all eclipse dependencies of current root project&quot; per one click. This will do automatically a &quot;gradlew cleanEclipse eclipse&quot; and refresh all projects in workspace automatically. JUnit resutls from gradle can be imported by one click also.
+&lt;/li&gt;
+&lt;li&gt;contains a eclipse help documentation
+&lt;/li&gt;
+&lt;li&gt;supports syntax highlighting for gradle console output
+&lt;/li&gt;
+&lt;li&gt;contains a tiny gradle build file editor (still alpha)
+&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;Current restrictions&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;
+Only multi projects are supported. You can select only one root project as base for operations.
+&lt;/li&gt;
+&lt;li&gt;Needs gradle wrapper inside root project&lt;/li&gt;
+&lt;li&gt;Needs bash (e.g. gitbash) installed&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- google_ad_section_end --&gt;</description>
+     <pubDate>Tue, 13 Sep 2016 18:26:23 +0000</pubDate>
+ <dc:creator>atregnaghi</dc:creator>
+ <guid isPermaLink="false">3071167 at http://marketplace.eclipse.org</guid>
+ <comments>http://marketplace.eclipse.org/content/egradle#comments</comments>
+  </item>
+  </channel>
+</rss>

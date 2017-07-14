@@ -1,0 +1,1082 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+
+<channel>
+	<title>Planet Eclipse</title>
+	<link>http://planeteclipse.org/planet/</link>
+	<language>en</language>
+	<description>Planet Eclipse - http://planeteclipse.org/planet/</description>
+
+<item>
+	<title>JBoss Tools Team: JBoss Tools and Red Hat Developer Studio Maintenance Release for Eclipse Neon</title>
+	<guid isPermaLink="true">http://tools.jboss.org/blog/10.1.0.ga-for-neon.html</guid>
+	<link>http://tools.jboss.org/blog/10.1.0.ga-for-neon.html</link>
+	<description>&lt;div&gt;&lt;div id=&quot;preamble&quot;&gt;
+      &lt;div class=&quot;sectionbody&quot;&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;http://tools.jboss.org/downloads/jbosstools/neon/4.4.1.Final.html&quot;&gt;JBoss Tools 4.4.1&lt;/a&gt; and &lt;a href=&quot;http://tools.jboss.org/downloads/devstudio/neon/10.1.0.GA.html&quot;&gt;Red Hat JBoss Developer Studio 10.1&lt;/a&gt; for Eclipse Neon are here waiting for you. Check it out!&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img alt=&quot;devstudio10&quot; src=&quot;http://tools.jboss.org/blog/images/devstudio10.png&quot; /&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect1&quot;&gt;
+      &lt;h2 id=&quot;installation&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#installation&quot;&gt;&lt;/a&gt;Installation&lt;/h2&gt;
+      &lt;div class=&quot;sectionbody&quot;&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;JBoss Developer Studio comes with everything pre-bundled in its installer. Simply download it from our &lt;a href=&quot;https://www.jboss.org/products/devstudio.html&quot;&gt;JBoss Products page&lt;/a&gt; and run it like this:&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;literalblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;pre&gt;java -jar jboss-devstudio-&amp;lt;installername&amp;gt;.jar&lt;/pre&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;JBoss Tools or Bring-Your-Own-Eclipse (BYOE) JBoss Developer Studio require a bit more:&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;This release requires at least Eclipse 4.6 (Neon) but we recommend
+      using the latest &lt;a href=&quot;http://www.eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/neonr&quot;&gt;Eclipse 4.6 Neon JEE Bundle&lt;/a&gt; since then you get most of the dependencies preinstalled.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Once you have installed Eclipse, you can either find us on the Eclipse Marketplace under &quot;JBoss Tools&quot; or &quot;Red Hat JBoss Developer Studio&quot;.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;For JBoss Tools, you can also use our update site directly.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;literalblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;pre&gt;http://download.jboss.org/jbosstools/neon/stable/updates/&lt;/pre&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect1&quot;&gt;
+      &lt;h2 id=&quot;what-is-new&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#what-is-new&quot;&gt;&lt;/a&gt;What is new?&lt;/h2&gt;
+      &lt;div class=&quot;sectionbody&quot;&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Our main focus for this release was improvements for container based development and bug fixing.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect2&quot;&gt;
+      &lt;h3 id=&quot;improved-openshift-3-and-docker-tools&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#improved-openshift-3-and-docker-tools&quot;&gt;&lt;/a&gt;Improved OpenShift 3 and Docker Tools&lt;/h3&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;We continue to work on providing better experience for container based development in JBoss Tools and Developer Studio. Let’s go through a few interesting updates here.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect3&quot;&gt;
+      &lt;h4 id=&quot;support-for-container-labels&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#support-for-container-labels&quot;&gt;&lt;/a&gt;Support for Container Labels&lt;/h4&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Users can now specify labels when running a container.
+      The labels are saved in the launch configuration and can also be edited before relaunching the container.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img alt=&quot;Container Labels&quot; src=&quot;http://tools.jboss.org/documentation/whatsnew/docker/images/docker_neon1_sprint118/container_labels.png&quot; /&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect3&quot;&gt;
+      &lt;h4 id=&quot;automatically-detect-known-docker-daemon-connections&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#automatically-detect-known-docker-daemon-connections&quot;&gt;&lt;/a&gt;Automatically detect known Docker daemon connections&lt;/h4&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;When the Docker Explorer view is opened, the list of existing connections (saved from a previous session) is reloaded.
+      In addition to this behaviour, the view will also attempt to find new connections using default settings such
+      the &amp;amp;aposunix:///var/run/docker.sock&amp;amp;apos Unix socket or the &amp;amp;aposDOCKER_HOST&amp;amp;apos, &amp;amp;aposDOCKER_CERT_PATH&amp;amp;apos and &amp;amp;aposDOCKER_TLS_VERIFY&amp;amp;apos environment
+      variables. This means that by default, in a new workspace, if a Docker daemon is reachable using one of those methods, the
+      user does not have to use the &quot;New Connection&quot; wizard to get a connection.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect3&quot;&gt;
+      &lt;h4 id=&quot;extension-point-for-docker-daemon-connection-settings&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#extension-point-for-docker-daemon-connection-settings&quot;&gt;&lt;/a&gt;Extension point for Docker daemon connection settings&lt;/h4&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;An extension point has been added to the Docker core plugin to allow for custom connection settings provisionning.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect3&quot;&gt;
+      &lt;h4 id=&quot;support-for-docker-compose&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#support-for-docker-compose&quot;&gt;&lt;/a&gt;Support for Docker Compose&lt;/h4&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Support for Docker Compose has finally landed !&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Users can select a &lt;code&gt;docker-compose.yml&lt;/code&gt; file and start Docker Compose from the
+      context menu, using the &lt;code&gt;Run &amp;gt; Docker Compose&lt;/code&gt; launcher shortcut.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;The Docker Compose process displays it logs (with support for text coloring based on ANSI escape codes)
+      and provides a &lt;code&gt;stop&lt;/code&gt; button to stop the underlying process.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img alt=&quot;Docker Compose&quot; src=&quot;http://tools.jboss.org/documentation/whatsnew/docker/images/docker_neon1_sprint119/docker_compose.png&quot; /&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Also, as with the support for building and running containers, a launch configuration is created after the
+      first call to Docker Compose on the selected &lt;code&gt;docker-compose.yml&lt;/code&gt; file.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect3&quot;&gt;
+      &lt;h4 id=&quot;docker-image-hierarchy-view-improvements&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#docker-image-hierarchy-view-improvements&quot;&gt;&lt;/a&gt;Docker Image Hierarchy View Improvements&lt;/h4&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;The new Docker Image Hierarchy view not only shows the relationships between
+      images (which is particularly interesting when an image is built using a Dockerfile),
+      but it also includes containers based on the images in the tree view
+      while providing with all relevant commands (in the context menu) for containers and images.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img alt=&quot;Docker Image Hierarchy View&quot; src=&quot;http://tools.jboss.org/documentation/whatsnew/docker/images/docker_neon1_sprint119/docker_image_hierarch_view.png&quot; /&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect3&quot;&gt;
+      &lt;h4 id=&quot;server-templates-can-now-be-displayed-edited&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#server-templates-can-now-be-displayed-edited&quot;&gt;&lt;/a&gt;Server templates can now be displayed / edited&lt;/h4&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Server templates are now displayed in the property view under the &lt;code&gt;Templates&lt;/code&gt; tab:&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img alt=&quot;property view template&quot; src=&quot;http://tools.jboss.org/documentation/whatsnew/openshift/images/property-view-template.png&quot; width=&quot;600&quot; /&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;You can access/edit the content of the template with the &lt;code&gt;Edit&lt;/code&gt; command.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect3&quot;&gt;
+      &lt;h4 id=&quot;events-can-now-be-displayed&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#events-can-now-be-displayed&quot;&gt;&lt;/a&gt;Events can now be displayed&lt;/h4&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Events generated as part of the application livecycle are now displayed in the property view under the &lt;code&gt;Events&lt;/code&gt; tab (available at the project level):&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img alt=&quot;property view event&quot; src=&quot;http://tools.jboss.org/documentation/whatsnew/openshift/images/property-view-event.png&quot; width=&quot;600&quot; /&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;You can refresh the content of the event with the &lt;code&gt;Refresh&lt;/code&gt; command or open the event in the OpenShift web console with the &lt;code&gt;Show In → Web Console&lt;/code&gt; command.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect3&quot;&gt;
+      &lt;h4 id=&quot;volume-claims-can-now-be-displayed&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#volume-claims-can-now-be-displayed&quot;&gt;&lt;/a&gt;Volume claims can now be displayed&lt;/h4&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Volume claims are now displayed in the property view under the &lt;code&gt;Storage&lt;/code&gt; tab (available at the project level):&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img alt=&quot;property view storage1&quot; src=&quot;http://tools.jboss.org/documentation/whatsnew/openshift/images/property-view-storage1.png&quot; width=&quot;600&quot; /&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;You can create a new volume claim using a resource file like the following:&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;listingblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;pre class=&quot;prettyprint highlight&quot;&gt;&lt;code class=&quot;language-json&quot;&gt;{
+          &quot;apiVersion&quot;: &quot;v1&quot;,
+          &quot;kind&quot;: &quot;PersistentVolumeClaim&quot;,
+          &quot;metadata&quot;: {
+              &quot;name&quot;: &quot;claim1&quot;
+          },
+          &quot;spec&quot;: {
+              &quot;accessModes&quot;: [ &quot;ReadWriteOnce&quot; ],
+              &quot;resources&quot;: {
+                  &quot;requests&quot;: {
+                      &quot;storage&quot;: &quot;1Gi&quot;
+                  }
+              }
+          }
+      }&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;If you deploy such a resource file with the &lt;code&gt;New → Resource&lt;/code&gt; command at the project level, the &lt;code&gt;Storage&lt;/code&gt; tab will be updated:&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img alt=&quot;property view storage2&quot; src=&quot;http://tools.jboss.org/documentation/whatsnew/openshift/images/property-view-storage2.png&quot; width=&quot;600&quot; /&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;You can access/edit the content of the volume claim with the &lt;code&gt;Edit&lt;/code&gt; command or open the volume claim in the OpenShift web console with the &lt;code&gt;Show In → Web Console&lt;/code&gt; command.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect2&quot;&gt;
+      &lt;h3 id=&quot;server-tools&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#server-tools&quot;&gt;&lt;/a&gt;Server Tools&lt;/h3&gt;
+      &lt;div class=&quot;sect3&quot;&gt;
+      &lt;h4 id=&quot;quickfixes-now-available-in-runtime-detection&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#quickfixes-now-available-in-runtime-detection&quot;&gt;&lt;/a&gt;QuickFixes now available in runtime detection&lt;/h4&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Runtime detection has been a feature of JBossTools for a long while, however, it would sometimes create runtime and server adapters with configuration errors without alerting the user. Now, the user will have an opportunity to execute quickfixes before completing the creation of their runtimes and servers.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img alt=&quot;JBIDE 15189 rt detect 1&quot; src=&quot;http://tools.jboss.org/documentation/whatsnew/server/images/JBIDE-15189_rt_detect_1.png&quot; /&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;To see this in action, we can first open up the runtime-detection preference page. We can see that our runtime-detection will automatically search three paths for valid runtimes of any type.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img alt=&quot;JBIDE 15189 rt detect 2&quot; src=&quot;http://tools.jboss.org/documentation/whatsnew/server/images/JBIDE-15189_rt_detect_2.png&quot; /&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Once we click search, the runtime-detection’s search dialog appears, with results it has found. In this case, it has located an EAP 6.4 and an EAP 7.0 installation. However, we can see that both have errors. If we click on the error column for the discovered EAP 7.0, the error is expanded, and we see that we’re missing a valid / compatible JRE. To fix the issue, we should click on this item.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img alt=&quot;JBIDE 15189 rt detect 3&quot; src=&quot;http://tools.jboss.org/documentation/whatsnew/server/images/JBIDE-15189_rt_detect_3.png&quot; /&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;When we click on the problem for EAP 7, the new JRE dialog appears, allowing us to add a compatible JRE. The dialog helpfully informs us of what the restrictions are for this specific runtime. In this case, we’re asked to define a JRE with a minimum version of Java-8.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img alt=&quot;JBIDE 15189 rt detect 4&quot; src=&quot;http://tools.jboss.org/documentation/whatsnew/server/images/JBIDE-15189_rt_detect_4.png&quot; /&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;If we continue along with the process by locating and adding a Java 8 JRE, as shown above, and finish the dialog, we’ll see that all the errors will disappear for both runtimes. In this example, the EAP 6.4 required a JRE of Java 7 or higher. The addition of the Java 8 JRE fixed this issue as well.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img alt=&quot;JBIDE 15189 rt detect 5&quot; src=&quot;http://tools.jboss.org/documentation/whatsnew/server/images/JBIDE-15189_rt_detect_5.png&quot; /&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Hopefully, this will help users preemptively discover and fix errors before being hit with surprising errors when trying to use the created server adapters.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect3&quot;&gt;
+      &lt;h4 id=&quot;support-for-wildfly-10-1&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#support-for-wildfly-10-1&quot;&gt;&lt;/a&gt;Support for WildFly 10.1&lt;/h4&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;The WildFly 10.0 Server adapter has been renamed to WildFly 10.x. It has been tested and verified to work for WildFly 10.1 installations.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect2&quot;&gt;
+      &lt;h3 id=&quot;hibernate-tools&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#hibernate-tools&quot;&gt;&lt;/a&gt;Hibernate Tools&lt;/h3&gt;
+      &lt;div class=&quot;sect3&quot;&gt;
+      &lt;h4 id=&quot;hibernate-runtime-provider-updates&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#hibernate-runtime-provider-updates&quot;&gt;&lt;/a&gt;Hibernate Runtime Provider Updates&lt;/h4&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;A number of additions and updates have been performed on the available Hibernate runtime  providers.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect4&quot;&gt;
+      &lt;h5 id=&quot;new-hibernate-5-2-runtime-provider&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#new-hibernate-5-2-runtime-provider&quot;&gt;&lt;/a&gt;New Hibernate 5.2 Runtime Provider&lt;/h5&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;With final releases available in the Hibernate 5.2 stream, the time was right to make available a corresponding Hibernate 5.2 runtime provider. This runtime provider incorporates Hibernate Core version 5.2.2.Final and Hibernate Tools version 5.2.0.Beta1.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot; style=&quot;text-align: center;&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img alt=&quot;hibernate 5 2&quot; src=&quot;http://tools.jboss.org/documentation/whatsnew/hibernate/images/4.4.1.Final/hibernate_5_2.png&quot; width=&quot;381&quot; /&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;title&quot;&gt;Figure 1. Hibernate 5.2 is available&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect4&quot;&gt;
+      &lt;h5 id=&quot;other-runtime-provider-updates&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#other-runtime-provider-updates&quot;&gt;&lt;/a&gt;Other Runtime Provider Updates&lt;/h5&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;The Hibernate 4.3 runtime provider now incorporates Hibernate Core version 4.3.11.Final and Hibernate Tools version 4.3.5.Final.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;The Hibernate 5.0 runtime provider now incorporates Hibernate Core version 5.0.10.Final and Hibernate Tools version 5.0.2.Final.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;The Hibernate 5.1 runtime provider now incorporates Hibernate Core version 5.1.1.Final and Hibernate Tools version 5.1.0.CR1.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect2&quot;&gt;
+      &lt;h3 id=&quot;forge-tools&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#forge-tools&quot;&gt;&lt;/a&gt;Forge Tools&lt;/h3&gt;
+      &lt;div class=&quot;sect3&quot;&gt;
+      &lt;h4 id=&quot;added-install-addon-from-the-catalog-command&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#added-install-addon-from-the-catalog-command&quot;&gt;&lt;/a&gt;Added Install addon from the catalog command&lt;/h4&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;From Forge 3.3.0.Final onwards it is now possible to query and install addons listed in the &lt;a href=&quot;http://forge.jboss.org/addons&quot;&gt;Forge addons page&lt;/a&gt;.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img alt=&quot;addon install from catalog&quot; src=&quot;http://tools.jboss.org/documentation/whatsnew/forge/images/4.4.1.AM3/addon-install-from-catalog.png&quot; /&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect3&quot;&gt;
+      &lt;h4 id=&quot;forge-runtime-updated-to-3-3-1-final&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#forge-runtime-updated-to-3-3-1-final&quot;&gt;&lt;/a&gt;Forge Runtime updated to 3.3.1.Final&lt;/h4&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;The included Forge runtime is now 3.3.1.Final. Read the official announcement &lt;a href=&quot;http://forge.jboss.org/news/jboss-forge-3.3.1.final-is-here&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img alt=&quot;startup&quot; src=&quot;http://tools.jboss.org/documentation/whatsnew/forge/images/4.4.1.Final/startup.png&quot; /&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect2&quot;&gt;
+      &lt;h3 id=&quot;freemarker&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#freemarker&quot;&gt;&lt;/a&gt;Freemarker&lt;/h3&gt;
+      &lt;div class=&quot;sect3&quot;&gt;
+      &lt;h4 id=&quot;freemarker-2-3-25&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#freemarker-2-3-25&quot;&gt;&lt;/a&gt;Freemarker 2.3.25&lt;/h4&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Freemarker library included in the Freemarker IDE was updated to latest available version 2.3.25.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect3&quot;&gt;
+      &lt;h4 id=&quot;flth-fltx-file-extensions-added&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#flth-fltx-file-extensions-added&quot;&gt;&lt;/a&gt;flth / fltx file extensions added&lt;/h4&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;The new flth and fltx extensions have been added and associated with Freemarker IDE. &lt;code&gt;flth&lt;/code&gt; stands for HTML content whereas &lt;code&gt;fltx&lt;/code&gt; stands for XML content.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect3&quot;&gt;
+      &lt;h4 id=&quot;overhaul-of-the-plugin-template-parser&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#overhaul-of-the-plugin-template-parser&quot;&gt;&lt;/a&gt;Overhaul of the plugin template parser&lt;/h4&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;The parser that FreeMarker IDE uses to extract IDE-centric information
+      (needed for syntax highlighting, related tag highlighting,
+      auto-completion, outline view, etc.) was overhauled. Several bugs were
+      fixed, and support for the newer template language features were
+      added. Also, the syntax highlighting is now more detailed inside
+      expressions.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect3&quot;&gt;
+      &lt;h4 id=&quot;related-tag-background-highlighting-fixed&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#related-tag-background-highlighting-fixed&quot;&gt;&lt;/a&gt;Related tag background highlighting fixed&lt;/h4&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Fixed the issue when the (by default) yellow highlighting of the
+      related FTL tags shift away from under the tag as you type.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect3&quot;&gt;
+      &lt;h4 id=&quot;showing-whitespace-block-selection-mode&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#showing-whitespace-block-selection-mode&quot;&gt;&lt;/a&gt;Showing whitespace, block selection mode&lt;/h4&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;The standard &quot;Show whitespace characters&quot; and &quot;Toggle block selection
+      mode&quot; icons are now available when editing a template.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect3&quot;&gt;
+      &lt;h4 id=&quot;improved-automatic-finishing-of-freemarker-constructs&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#improved-automatic-finishing-of-freemarker-constructs&quot;&gt;&lt;/a&gt;Improved automatic finishing of FreeMarker constructs&lt;/h4&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;When you type &lt;code&gt;&amp;lt;#&lt;/code&gt;, &lt;code&gt;&amp;lt;@&lt;/code&gt;, &lt;code&gt;${&lt;/code&gt;, &lt;code&gt;#{&lt;/code&gt; and &lt;code&gt;&amp;lt;#--&lt;/code&gt; the freemarker editor now automatically closes them.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect3&quot;&gt;
+      &lt;h4 id=&quot;error-positions-links-on-the-console&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#error-positions-links-on-the-console&quot;&gt;&lt;/a&gt;Error positions links on the console&lt;/h4&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;When a FreeMarker exception is printed to the console, the error
+      position in it is a link that navigates to the error. This has worked
+      long ago, but was broken for quite a while.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect3&quot;&gt;
+      &lt;h4 id=&quot;fixed-auto-indentation&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#fixed-auto-indentation&quot;&gt;&lt;/a&gt;Fixed auto-indentation&lt;/h4&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;When hitting enter, sometimes the new line haven’t inherited the
+      indentation of the last line.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect3&quot;&gt;
+      &lt;h4 id=&quot;updated-the-database-used-for-auto-completion&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#updated-the-database-used-for-auto-completion&quot;&gt;&lt;/a&gt;Updated the &quot;database&quot; used for auto completion&lt;/h4&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Auto completion now knows all directives and &quot;built-ins&quot; up to
+      FreeMarker 2.3.25.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect1&quot;&gt;
+      &lt;h2 id=&quot;what-is-next&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#what-is-next&quot;&gt;&lt;/a&gt;What is next?&lt;/h2&gt;
+      &lt;div class=&quot;sectionbody&quot;&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Having JBoss Tools 4.4.1 and Developer Studio 10.1 out we are already working on the next maintenance release for Eclipse Neon.1.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Enjoy!&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Jeff Maury&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;&lt;/div&gt;</description>
+	<pubDate>Wed, 21 Sep 2016 16:04:52 +0000</pubDate>
+</item>
+<item>
+	<title>Christian Pontesegger: Native browser for GTK on linux</title>
+	<guid isPermaLink="false">tag:blogger.com,1999:blog-3460102793186140898.post-7382841941705793523</guid>
+	<link>http://codeandme.blogspot.com/2016/09/native-browser-for-gtk-on-linux.html</link>
+	<description>Having support for the internal browser is often not working out of the box on linux. You can check the status by opening your Preferences/General/Web Browser settings. If the radio button Use internal  web browser is enabled (not necessarily activated) internal browser support is working, otherwise not.&lt;br /&gt;&lt;br /&gt;Most annoyingly without internal browser support help hovers in your text editors use a fallback mode not rendering links or images.&lt;br /&gt;&lt;br /&gt;To solve this issue you may first check the &lt;a href=&quot;https://www.eclipse.org/swt/faq.php&quot; target=&quot;_blank&quot;&gt;SWT FAQ&lt;/a&gt;. For me working on gentoo linux the following command fixed the problem:&lt;br /&gt;&lt;pre class=&quot;brush: java&quot;&gt;emerge net-libs/webkit-gtk:2&lt;/pre&gt;It is important to not only install the latest version of webkit-gtk which will not be recognized by Eclipse. After installation restart eclipse and your browser should work. Verified on Eclipse Neon.</description>
+	<pubDate>Wed, 21 Sep 2016 09:14:56 +0000</pubDate>
+	<author>noreply@blogger.com (Christian Pontesegger)</author>
+</item>
+<item>
+	<title>Geniutec: Creating My First Web App with Angular 2 in Eclipse</title>
+	<guid isPermaLink="false">https://www.genuitec.com/?p=496768</guid>
+	<link>https://www.genuitec.com/first-angular-2-app/</link>
+	<description>&lt;p&gt;Angular 2 is a framework for building desktop and mobile web applications. After hearing rave reviews about Angular 2, I decided to check it out and take my first steps into modern web development. In this article, I’ll show you how to create a simple master-details application using Angular 2, TypeScript, Angular CLI and Eclipse […]&lt;/p&gt;
+&lt;p&gt;The post &lt;a href=&quot;https://www.genuitec.com/first-angular-2-app/&quot; rel=&quot;nofollow&quot;&gt;Creating My First Web App with Angular 2 in Eclipse&lt;/a&gt; appeared first on &lt;a href=&quot;https://www.genuitec.com&quot; rel=&quot;nofollow&quot;&gt;Genuitec&lt;/a&gt;.&lt;/p&gt;</description>
+	<pubDate>Tue, 20 Sep 2016 14:00:01 +0000</pubDate>
+</item>
+<item>
+	<title>Lars Vogel: Eclipse 4.7 M2 is out with a focus on usability</title>
+	<guid isPermaLink="false">http://blog.vogella.com/?p=7480</guid>
+	<link>http://blog.vogella.com/2016/09/19/eclipse-4-7-m2-is-out-with-a-focus-on-usability/</link>
+	<description>&lt;p&gt;&lt;a href=&quot;http://download.eclipse.org/eclipse/downloads/drops4/S-4.7M2-201609150230/&quot;&gt;Eclipse 4.7 M2&lt;/a&gt; is out with a focus on usability. &lt;/p&gt;
+&lt;p&gt;From simplified filter functionality in the Problems, Bookmark and Task view, improved color usage for popups, simplified editor assignments for file extensions, enhancements of quick access, a configurable compare direction in the compare editor, etc. you will find lots of nice goodies which will increase your love with the Eclipse IDE. &lt;/p&gt;
+&lt;p&gt;Also the background jobs API has been improved and we run jobs still fast, even if you do a lot of status updates in your job implementation. &lt;/p&gt;
+&lt;p&gt;Checkout the &lt;a href=&quot;https://www.eclipse.org/eclipse/news/4.7/M2/&quot;&gt;Eclipse 4.7 M2 Notes and Noteworthy&lt;/a&gt; for the details.&lt;/p&gt;</description>
+	<pubDate>Mon, 19 Sep 2016 08:23:20 +0000</pubDate>
+</item>
+<item>
+	<title>Leo Ufimtsev: Eclipse basics for Java development</title>
+	<guid isPermaLink="false">http://coffeeorientedprogramming.com/?p=318</guid>
+	<link>https://coffeeorientedprogramming.com/2016/09/19/eclipse-basics-for-java-development/</link>
+	<description>&lt;p&gt;Just a basic into to Eclipse, aimed at people who are new to Java. Covers creating a new project, debugging, common shortcuts/navigation, git.&lt;/p&gt;
+&lt;p&gt;&lt;span id=&quot;more-318&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;h2&gt;Workspace&lt;/h2&gt;
+&lt;p&gt;Workspace contains your settings, ex your keyboard shortcut preferences, list of your open projects. You can have multiple workspaces.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&quot;Selection_097.png&quot; class=&quot;alignnone  wp-image-400&quot; height=&quot;242&quot; src=&quot;https://coffeeorientedprogramming.files.wordpress.com/2016/09/selection_097.png?w=425&amp;amp;h=242&quot; width=&quot;425&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;You can switch between Workspaces via File -&amp;gt;Switch Workspaces&lt;/p&gt;
+&lt;h2&gt;Projects&lt;/h2&gt;
+&lt;p&gt;A project is essentially an application, or a library to an application. Projects can be opened or closed. Content of closed projects don’t appear in searches.&lt;/p&gt;
+&lt;h2&gt;Hello world Project&lt;/h2&gt;
+&lt;p&gt;To run some basic java code:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;File -&amp;gt; New -&amp;gt; Java project&lt;/li&gt;
+&lt;li&gt;Give the project some name -&amp;gt;  finish.&lt;br /&gt;
+&lt;img alt=&quot;Selection_085.png&quot; class=&quot;alignnone  wp-image-337&quot; height=&quot;303&quot; src=&quot;https://coffeeorientedprogramming.files.wordpress.com/2016/09/selection_085.png?w=346&amp;amp;h=303&quot; width=&quot;346&quot; /&gt;&lt;/li&gt;
+&lt;li&gt;Right click on src -&amp;gt; New -&amp;gt; Class&lt;br /&gt;
+&lt;img alt=&quot;Selection_086.png&quot; class=&quot;alignnone size-full wp-image-342&quot; src=&quot;https://coffeeorientedprogramming.files.wordpress.com/2016/09/selection_086.png?w=680&quot; /&gt;&lt;/li&gt;
+&lt;li&gt;Give your Class some name, check “Public static void main(String [] args)”&lt;br /&gt;
+&lt;img alt=&quot;Selection_087.png&quot; class=&quot;alignnone  wp-image-347&quot; height=&quot;564&quot; src=&quot;https://coffeeorientedprogramming.files.wordpress.com/2016/09/selection_087.png?w=449&amp;amp;h=564&quot; width=&quot;449&quot; /&gt;&lt;/li&gt;
+&lt;li&gt;Add “Hello World” print line:&lt;br /&gt;
+System.out.println(“Hello world”);&lt;br /&gt;
+&lt;img alt=&quot;Selection_088.png&quot; class=&quot;alignnone size-full wp-image-352&quot; src=&quot;https://coffeeorientedprogramming.files.wordpress.com/2016/09/selection_088.png?w=680&quot; /&gt;&lt;/li&gt;
+&lt;li&gt;Right click on “SomeName.java” -&amp;gt; run as -&amp;gt; Java Application&lt;br /&gt;
+&lt;img alt=&quot;Selection_089.png&quot; class=&quot;alignnone size-full wp-image-356&quot; src=&quot;https://coffeeorientedprogramming.files.wordpress.com/2016/09/selection_089.png?w=680&quot; /&gt;&lt;/li&gt;
+&lt;li&gt;Output printed in Console:&lt;br /&gt;
+&lt;img alt=&quot;Selection_090.png&quot; class=&quot;alignnone size-full wp-image-360&quot; src=&quot;https://coffeeorientedprogramming.files.wordpress.com/2016/09/selection_090.png?w=680&quot; /&gt;&lt;/li&gt;
+&lt;li&gt;Next time you can run the file via run button:&lt;img alt=&quot;Selection_092.png&quot; class=&quot;alignnone size-full wp-image-364&quot; src=&quot;https://coffeeorientedprogramming.files.wordpress.com/2016/09/selection_0921.png?w=680&quot; /&gt;&lt;/li&gt;
+&lt;li&gt;Or via “Ctrl+F11”&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Debugging&lt;/h2&gt;
+&lt;p&gt;Set a breakpoint by double clicking on the line numbers in the margin, then click on the bug icon or right click and “Debug as” -&amp;gt; “Java appliaction”&lt;br /&gt;
+&lt;img alt=&quot;Selection_098.png&quot; class=&quot;alignnone  wp-image-415&quot; height=&quot;432&quot; src=&quot;https://coffeeorientedprogramming.files.wordpress.com/2016/09/selection_098.png?w=755&amp;amp;h=432&quot; width=&quot;755&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;For more info on debugging, head over to Vogella:&lt;br /&gt;
+&lt;a href=&quot;http://www.vogella.com/tutorials/EclipseDebugging/article.html&quot;&gt;http://www.vogella.com/tutorials/EclipseDebugging/article.html&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Switching perspectives&lt;/h2&gt;
+&lt;p&gt;Eclipse has the notion of Perspectives. One is for Java development, one for debugging, (others could be C++ development, or task planning etc..). It’s basically a customisation of features and layout.&lt;/p&gt;
+&lt;p&gt;When you finish debugging, you can switch back to the java perspective:&lt;br /&gt;
+&lt;img alt=&quot;Selection_099.png&quot; class=&quot;alignnone size-full wp-image-422&quot; src=&quot;https://coffeeorientedprogramming.files.wordpress.com/2016/09/selection_099.png?w=680&quot; /&gt;&lt;/p&gt;
+&lt;h2&gt;Common keyboard shortcuts&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Ctrl+/    – comment code “//”&lt;br /&gt;
+&lt;img alt=&quot;Selection_093.png&quot; class=&quot;alignnone size-full wp-image-369&quot; src=&quot;https://coffeeorientedprogramming.files.wordpress.com/2016/09/selection_093.png?w=680&quot; /&gt;&lt;/li&gt;
+&lt;li&gt;Ctrl+shift+/    – comment code ‘/* … */’&lt;br /&gt;
+&lt;img alt=&quot;Selection_094.png&quot; class=&quot;alignnone size-full wp-image-374&quot; src=&quot;https://coffeeorientedprogramming.files.wordpress.com/2016/09/selection_094.png?w=680&quot; /&gt;&lt;/li&gt;
+&lt;li&gt;Ctrl+F11   – Run last run configuration&lt;/li&gt;
+&lt;li&gt;Ctrl+Shift+L  Keyboard reminder cue sheet. (Type to search)&lt;br /&gt;
+&lt;img alt=&quot;Selection_095.png&quot; class=&quot;alignnone  wp-image-380&quot; height=&quot;336&quot; src=&quot;https://coffeeorientedprogramming.files.wordpress.com/2016/09/selection_095.png?w=279&amp;amp;h=336&quot; width=&quot;279&quot; /&gt;&lt;/li&gt;
+&lt;li&gt;Ctrl+Shift+L, then Ctrl+Shift+L again, open keyboard preferences.&lt;/li&gt;
+&lt;li&gt;Ctrl+O – Java quick method Outline:&lt;br /&gt;
+&lt;img alt=&quot;Selection_096.png&quot; class=&quot;alignnone  wp-image-386&quot; height=&quot;387&quot; src=&quot;https://coffeeorientedprogramming.files.wordpress.com/2016/09/selection_096.png?w=354&amp;amp;h=387&quot; width=&quot;354&quot; /&gt;&lt;br /&gt;
+Note: Regex and case search works. Ex “*Key” will find “getBackgroundColorKey()”, so will  “gBFCK”.&lt;/li&gt;
+&lt;li&gt;Ctrl+Shift+r – search for resource (navigate between your classes).&lt;/li&gt;
+&lt;li&gt;Ctrl+Shift+f – automatically format the selected code. (Or all code if no block selected).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For more on shortcuts, head over to Vogella:&lt;br /&gt;
+&lt;a href=&quot;http://www.vogella.com/tutorials/EclipseShortcuts/article.html&quot;&gt;http://www.vogella.com/tutorials/EclipseShortcuts/article.html&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Source code navigation&lt;/h2&gt;
+&lt;p&gt;Right click on a method/variable to bring up a context menu, from there select:&lt;/p&gt;
+&lt;h3&gt;Open Declaration (F3)&lt;/h3&gt;
+&lt;p&gt;This is one of the most used functions. It’s a universal “jump to where the method/variable/class/constant is defined”.&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;h3&gt;Open Call hierarchy&lt;/h3&gt;
+&lt;p&gt;See where variable or method is called.&lt;/p&gt;
+&lt;p&gt;Tip: For variables, you can narrow down the Field Access so that it only shows where a field is read/written.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&quot;Selection_105.png&quot; class=&quot;alignnone size-full wp-image-462&quot; src=&quot;https://coffeeorientedprogramming.files.wordpress.com/2016/09/selection_1051.png?w=680&quot; /&gt;&lt;/p&gt;
+&lt;h3&gt;Quick outline (Ctrl+O)&lt;/h3&gt;
+&lt;p&gt;The quick outline is a quick way to find a function in your class. It has regex support and case search. E.g “*size” will find any method with ‘size’ in it and “cSI” will find ‘computeSizeInPixels’.&lt;br /&gt;
+Tip: Press Ctrl+O again and you will be shown methods that get inherited from parent classes.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&quot;Selection_102.png&quot; class=&quot;alignnone size-full wp-image-460&quot; src=&quot;https://coffeeorientedprogramming.files.wordpress.com/2016/09/selection_102.png?w=680&quot; /&gt;&lt;/p&gt;
+&lt;h3&gt;Navigate to super/implementation (Ctrl+click)&lt;/h3&gt;
+&lt;p&gt;Sometimes you may want to see which sub-classes overrides a method. You can hover over a method and press ctrl+click, then on “Open Implementation”.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&quot;Selection_106.png&quot; class=&quot;alignnone size-full wp-image-463&quot; src=&quot;https://coffeeorientedprogramming.files.wordpress.com/2016/09/selection_106.png?w=680&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;You will be presented with a list of sub-implementations.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&quot;Selection_108.png&quot; class=&quot;alignnone size-full wp-image-464&quot; src=&quot;https://coffeeorientedprogramming.files.wordpress.com/2016/09/selection_108.png?w=680&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;You can similarly navigate to parent classes.&lt;/p&gt;
+&lt;h2&gt;Code completion&lt;/h2&gt;
+&lt;p&gt;Predict variable names, method names,&lt;/p&gt;
+&lt;p&gt;Start typing something, press: “Ctrl+space”&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&quot;Selection_101.png&quot; class=&quot;alignnone size-full wp-image-429&quot; src=&quot;https://coffeeorientedprogramming.files.wordpress.com/2016/09/selection_101.png?w=680&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;It can complete by case also, ex if you type “mOF” and press Ctrl+Space, it will expand to “myOtherFunction()”.&lt;/p&gt;
+&lt;h2&gt;Templates&lt;/h2&gt;
+&lt;p&gt;Typing “System.out.println();” is tedious. Instead you can type “syso” and then press ‘ctrl+space’. Eclipse can fill in the template code.&lt;img alt=&quot;Selection_084.png&quot; class=&quot;alignnone size-full wp-image-326&quot; src=&quot;https://coffeeorientedprogramming.files.wordpress.com/2016/09/selection_084.png?w=680&quot; /&gt;&lt;br /&gt;
+You can find more on templates in Eclipse Preferences.&lt;/p&gt;
+&lt;h2&gt;Git integration&lt;/h2&gt;
+&lt;p&gt;99% of my git workflow happens inside Eclipse.&lt;/p&gt;
+&lt;p&gt;You will want to open three useful views:&lt;/p&gt;
+&lt;p&gt;Window -&amp;gt; Show view -&amp;gt; others&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Team -&amp;gt; History&lt;/li&gt;
+&lt;li&gt;git -&amp;gt; Git Repositories&lt;/li&gt;
+&lt;li&gt;git -&amp;gt; Git Staging&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You can manage git repositories in the “Git Repositories” view:&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&quot;Selection_109.png&quot; class=&quot;alignnone size-full wp-image-465&quot; src=&quot;https://coffeeorientedprogramming.files.wordpress.com/2016/09/selection_109.png?w=680&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;You can add changed files in the “Git Staging View” via drag and drop, and fill in the commit message. You can view your changes by double clicking on the files:&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&quot;Selection_110.png&quot; class=&quot;alignnone size-full wp-image-466&quot; src=&quot;https://coffeeorientedprogramming.files.wordpress.com/2016/09/selection_110.png?w=680&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;In the “History” view, you can create new branches, cherry pick commits, checkout older versions. Compare current files to previous versions etc..&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&quot;Selection_112.png&quot; class=&quot;alignnone size-full wp-image-467&quot; src=&quot;https://coffeeorientedprogramming.files.wordpress.com/2016/09/selection_112.png?w=680&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&quot;Selection_113.png&quot; class=&quot;alignnone size-full wp-image-468&quot; src=&quot;https://coffeeorientedprogramming.files.wordpress.com/2016/09/selection_113.png?w=680&quot; /&gt;&lt;/p&gt;
+&lt;h2&gt;More on Eclipse&lt;/h2&gt;
+&lt;p&gt;If you want to know more about the Eclipse interface, feel free to head over to Vogella’s in-depth Eclipse tutorial:&lt;br /&gt;
+&lt;a href=&quot;http://www.vogella.com/tutorials/Eclipse/article.html&quot;&gt;http://www.vogella.com/tutorials/Eclipse/article.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Also free free to leave comments with questions.&lt;/p&gt;&lt;br /&gt;  &lt;a href=&quot;http://feeds.wordpress.com/1.0/gocomments/coffeeorientedprogramming.wordpress.com/318/&quot; rel=&quot;nofollow&quot;&gt;&lt;img alt=&quot;&quot; border=&quot;0&quot; src=&quot;http://feeds.wordpress.com/1.0/comments/coffeeorientedprogramming.wordpress.com/318/&quot; /&gt;&lt;/a&gt; &lt;img alt=&quot;&quot; border=&quot;0&quot; height=&quot;1&quot; src=&quot;https://pixel.wp.com/b.gif?host=coffeeorientedprogramming.com&amp;amp;blog=74903670&amp;amp;post=318&amp;amp;subd=coffeeorientedprogramming&amp;amp;ref=&amp;amp;feed=1&quot; width=&quot;1&quot; /&gt;</description>
+	<pubDate>Mon, 19 Sep 2016 03:10:24 +0000</pubDate>
+</item>
+<item>
+	<title>Doug Schaefer: Pushing the Eclipse IDE Forward</title>
+	<guid isPermaLink="false">http://cdtdoug.ca/?p=779</guid>
+	<link>https://cdtdoug.ca/2016/09/17/pushing-the-eclipse-ide-forward/</link>
+	<description>&lt;p&gt;It’s been a crazy week if you follow the &lt;a href=&quot;https://dev.eclipse.org/mhonarc/lists/ide-dev/&quot;&gt;ide-dev mailing list at Eclipse&lt;/a&gt;. We’ve had many posts over the years discussing our competitive relationship with IntelliJ and the depression that sets in when we try to figure out how to make Eclipse make better so people don’t hate on it so much and then how nothing changes.&lt;/p&gt;
+&lt;p&gt;This time, though,  sparked by what seemed to be an &lt;a href=&quot;https://dev.eclipse.org/mhonarc/lists/ide-dev/msg01303.html&quot;&gt;innocent post by Mickael Istria&lt;/a&gt; about yet another claim that IntelliJ has better content assist (which from what I’ve seen, it actually does). This time it sparked a huge conversation with many Eclipse contributors chiming in with their thoughts about where we are with the Eclipse IDE and what needs to be done to make things better. A great summary of the last few days has been captured in a &lt;a href=&quot;https://jaxenter.de/eclipse-weekly-eclipse-vs-intellij-idea-46687&quot;&gt;German-language Jaxenter article.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The difference this time is that it’s actually sparked action. Mickael, Pascal Rapicault, and others have switched some of their focus on the low hanging user experience issues and are providing fixes for them. The community has been activated and I love seeing it.&lt;/p&gt;
+&lt;p&gt;Someone asked why the Architecture Council at Eclipse doesn’t step in and help guide some of this effort and after discussing it at our monthly call, we’ve decided to do just that. Dani Megert and I will revive the UI Guidelines effort and update the current set and extend it to more general user experience guidance. We’ll use the &lt;a href=&quot;https://dev.eclipse.org/mailman/listinfo/ui-best-practices-working-group&quot;&gt;UI Best Practices group mailing list&lt;/a&gt; to hold public discussions to help with that. Everyone is welcome to participate. And I’m sure the ide-dev list will continue to be busy as contributors discuss implementation details.&lt;/p&gt;
+&lt;p&gt;Eclipse became the number one Java IDE with little marketing. Back in the 2000’s developers were hungry for a good Java IDE and since Eclipse was free and easy to set up (yes, unzipping the IDE wasn’t that bad an experience) and worked well, had great static analysis and refactoring, they fell in love with it.&lt;/p&gt;
+&lt;p&gt;Other IDEs have caught up and in certain areas passed Eclipse and, yes, IntelliJ has become more popular. It’s not because of marketing. Developers decide what they like to use by downloading it and trying it out. As long as we keep our web presence in shape that developers can find the IDE, especially the Java one, and then keep working to make it functionally the best IDE we can, we’ll be able to continue to serve the needs of developers for a long time.&lt;/p&gt;
+&lt;p&gt;Our best marketing comes from our users. That’s the same with all technology these days. I’d rather hear from someone who’s tried Docker Swarm than believe what the Docker people are telling me (for example). That’s how we got Eclipse to number one, and where we need to focus to keep the ball rolling. And as a contributor community, we’re working hard to get them something good to talk about.&lt;/p&gt;</description>
+	<pubDate>Sat, 17 Sep 2016 18:40:28 +0000</pubDate>
+</item>
+<item>
+	<title>PapyrusUML: Me as text?</title>
+	<guid isPermaLink="false">http://papyrusuml.wordpress.com/?p=238</guid>
+	<link>https://papyrusuml.wordpress.com/2016/09/16/me-as-text/</link>
+	<description>&lt;p&gt;Over the last few days, a large group of my minions and admires met in Sweden at EMD2017 to talk about me…in all my incarnation.&lt;/p&gt;
+&lt;p&gt;One of the most polarizing discussion was about whether I should stay graphical or whether I also needed to be textual. For those who do not know, I am a UML-based modeling tool and therefore graphical by nature.&lt;/p&gt;
+&lt;p&gt;However, some of my minions think that I would be more usable if I also allowed them to create/edit models using text (just like this posting, but in a model instead of a blog post.&lt;/p&gt;
+&lt;p&gt;During the meeting, there was a lot of discussion about whether it was a good idea or not, whether it was useful or not, whether I was even able to support this!&lt;/p&gt;
+&lt;p&gt;The main point made by the pro-text minions was that many things are simply easier to do by writing text rather than drawing images, but that both could be supported. Other minions were saying that it was simply impossible.&lt;/p&gt;
+&lt;p&gt;Now, this is all a bit strange to me. After all, when I look at my picture, I am an image, but then I can express myself in text (again, like in this posting).&lt;/p&gt;
+&lt;p&gt;Regardless, any new capability given me makes me happy!&lt;/p&gt;
+&lt;p&gt;And I wonder how I would look as text…&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://papyrusuml.files.wordpress.com/2016/09/papyrus-logo-asciiart.png&quot;&gt;&lt;img alt=&quot;papyrus-logo-asciiart&quot; class=&quot;size-medium wp-image-255 aligncenter&quot; height=&quot;300&quot; src=&quot;https://papyrusuml.files.wordpress.com/2016/09/papyrus-logo-asciiart.png?w=300&amp;amp;h=300&quot; width=&quot;300&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I think I like myself better as an image, but it’s good to have a choice. In the end, I trust my minions.&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;&lt;br /&gt;Filed under: &lt;a href=&quot;https://papyrusuml.wordpress.com/category/papyrus/&quot;&gt;Papyrus&lt;/a&gt;, &lt;a href=&quot;https://papyrusuml.wordpress.com/category/textual/&quot;&gt;Textual&lt;/a&gt; Tagged: &lt;a href=&quot;https://papyrusuml.wordpress.com/tag/modeling/&quot;&gt;modeling&lt;/a&gt;, &lt;a href=&quot;https://papyrusuml.wordpress.com/tag/textual/&quot;&gt;Textual&lt;/a&gt;, &lt;a href=&quot;https://papyrusuml.wordpress.com/tag/uml-2/&quot;&gt;uml&lt;/a&gt; &lt;a href=&quot;http://feeds.wordpress.com/1.0/gocomments/papyrusuml.wordpress.com/238/&quot; rel=&quot;nofollow&quot;&gt;&lt;img alt=&quot;&quot; border=&quot;0&quot; src=&quot;http://feeds.wordpress.com/1.0/comments/papyrusuml.wordpress.com/238/&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://feeds.wordpress.com/1.0/godelicious/papyrusuml.wordpress.com/238/&quot; rel=&quot;nofollow&quot;&gt;&lt;img alt=&quot;&quot; border=&quot;0&quot; src=&quot;http://feeds.wordpress.com/1.0/delicious/papyrusuml.wordpress.com/238/&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://feeds.wordpress.com/1.0/gofacebook/papyrusuml.wordpress.com/238/&quot; rel=&quot;nofollow&quot;&gt;&lt;img alt=&quot;&quot; border=&quot;0&quot; src=&quot;http://feeds.wordpress.com/1.0/facebook/papyrusuml.wordpress.com/238/&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://feeds.wordpress.com/1.0/gotwitter/papyrusuml.wordpress.com/238/&quot; rel=&quot;nofollow&quot;&gt;&lt;img alt=&quot;&quot; border=&quot;0&quot; src=&quot;http://feeds.wordpress.com/1.0/twitter/papyrusuml.wordpress.com/238/&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://feeds.wordpress.com/1.0/gostumble/papyrusuml.wordpress.com/238/&quot; rel=&quot;nofollow&quot;&gt;&lt;img alt=&quot;&quot; border=&quot;0&quot; src=&quot;http://feeds.wordpress.com/1.0/stumble/papyrusuml.wordpress.com/238/&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://feeds.wordpress.com/1.0/godigg/papyrusuml.wordpress.com/238/&quot; rel=&quot;nofollow&quot;&gt;&lt;img alt=&quot;&quot; border=&quot;0&quot; src=&quot;http://feeds.wordpress.com/1.0/digg/papyrusuml.wordpress.com/238/&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://feeds.wordpress.com/1.0/goreddit/papyrusuml.wordpress.com/238/&quot; rel=&quot;nofollow&quot;&gt;&lt;img alt=&quot;&quot; border=&quot;0&quot; src=&quot;http://feeds.wordpress.com/1.0/reddit/papyrusuml.wordpress.com/238/&quot; /&gt;&lt;/a&gt; &lt;img alt=&quot;&quot; border=&quot;0&quot; height=&quot;1&quot; src=&quot;https://pixel.wp.com/b.gif?host=papyrusuml.wordpress.com&amp;amp;blog=72365150&amp;amp;post=238&amp;amp;subd=papyrusuml&amp;amp;ref=&amp;amp;feed=1&quot; width=&quot;1&quot; /&gt;</description>
+	<pubDate>Fri, 16 Sep 2016 07:05:05 +0000</pubDate>
+</item>
+<item>
+	<title>Jeremie Bresson: Install &quot;Plug-in Spy&quot; in your Eclipse Neon IDE</title>
+	<guid isPermaLink="true">http://jmini.github.io/blog/2016/2016-09-16_eclipse_plugin_spy.html</guid>
+	<link>http://jmini.github.io/blog/2016/2016-09-16_eclipse_plugin_spy.html</link>
+	<description>&lt;div class=&quot;paragraph&quot;&gt; 
+ &lt;p&gt;There is a lot of documentation about the Eclipse &quot;Plug-in Spy&quot; feature (&lt;a href=&quot;http://www.vogella.com/tutorials/EclipseCodeAccess/article.html#plug-in-spy-for-ui-parts&quot;&gt;Plug-in Spy for UI parts&lt;/a&gt; or &lt;a href=&quot;https://scratsh.wordpress.com/2009/06/09/eclipse-3-5-plug-in-spy-and-menus/&quot;&gt;Eclipse 3.5 - Plug-in Spy and menus&lt;/a&gt;). Im my opinion one information is missing: what you need to install to use the Spy feature in your Eclipse Neon IDE. Here is my small how-to.&lt;/p&gt; 
+&lt;/div&gt; 
+&lt;div class=&quot;paragraph&quot;&gt; 
+ &lt;p&gt;Select &quot;Install new Software…​&quot; in the &quot;Help&quot; Menu. In the dialog, switch to the &quot;The Eclipse Project Updates&quot; update site (or enter its location &lt;code&gt;&lt;a class=&quot;bare&quot; href=&quot;http://download.eclipse.org/eclipse/updates/4.6&quot;&gt;http://download.eclipse.org/eclipse/updates/4.6&lt;/a&gt;&lt;/code&gt;). Filter with &quot;PDE&quot; and select the &quot;Eclipse PDE Plug-in Developer Resources&quot;. Validate your choices with &quot;Next&quot; and &quot;Finish&quot;, Eclipse will install the feature and ask for a Restart.&lt;/p&gt; 
+&lt;/div&gt; 
+&lt;div class=&quot;imageblock&quot; id=&quot;img-dialog&quot;&gt; 
+ &lt;div class=&quot;content&quot;&gt; 
+  &lt;img alt=&quot;2016 09 16 install dialog&quot; src=&quot;http://jmini.github.io/blog/2016/2016-09-16_install-dialog.png&quot; /&gt; 
+ &lt;/div&gt; 
+ &lt;div class=&quot;title&quot;&gt;
+  Figure 1. Install new Software in Eclipse
+ &lt;/div&gt; 
+&lt;/div&gt; 
+&lt;div class=&quot;paragraph&quot;&gt; 
+ &lt;p&gt;If you prefer the Oomph way, you can paste the snippet contained in &lt;a href=&quot;http://jmini.github.io/feed.xml#lst-oomph&quot;&gt;Listing 1&lt;/a&gt; in your &lt;code&gt;installation.setup&lt;/code&gt; file (Open it with the Menu: &lt;span class=&quot;menuseq&quot;&gt;&lt;span class=&quot;menu&quot;&gt;Navigate&lt;/span&gt; ▸ &lt;span class=&quot;submenu&quot;&gt;Open Setup&lt;/span&gt; ▸ &lt;span class=&quot;menuitem&quot;&gt;Installation&lt;/span&gt;&lt;/span&gt;).&lt;/p&gt; 
+&lt;/div&gt; 
+&lt;div class=&quot;listingblock&quot; id=&quot;lst-oomph&quot;&gt; 
+ &lt;div class=&quot;content&quot;&gt; 
+  &lt;pre class=&quot;prettyprint highlight&quot;&gt;&lt;code class=&quot;language-xml&quot;&gt;&amp;lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&amp;gt;
+&amp;lt;setup.p2:P2Task
+    xmi:version=&quot;2.0&quot;
+    xmlns:xmi=&quot;http://www.omg.org/XMI&quot;
+    xmlns:setup.p2=&quot;http://www.eclipse.org/oomph/setup/p2/1.0&quot;&amp;gt;
+  &amp;lt;requirement
+      name=&quot;org.eclipse.pde.source.feature.group&quot;/&amp;gt;
+  &amp;lt;repository
+      url=&quot;http://download.eclipse.org/eclipse/updates/4.6&quot;/&amp;gt;
+&amp;lt;/setup.p2:P2Task&amp;gt;&lt;/code&gt;&lt;/pre&gt; 
+ &lt;/div&gt; 
+&lt;/div&gt; 
+&lt;div class=&quot;paragraph&quot;&gt; 
+ &lt;p&gt;Your Oomph Editor should looks like in &lt;a href=&quot;http://jmini.github.io/feed.xml#img-oomph&quot;&gt;Figure 2&lt;/a&gt;. Save the file and select &quot;Perform Setup Task…​&quot; (in the &lt;span class=&quot;menu&quot;&gt;Help&lt;/span&gt; menu). Oomph will update your installation and will ask for a restart.&lt;/p&gt; 
+&lt;/div&gt; 
+&lt;div class=&quot;imageblock&quot; id=&quot;img-oomph&quot;&gt; 
+ &lt;div class=&quot;content&quot;&gt; 
+  &lt;img alt=&quot;2016 09 16 installation oomph editor&quot; src=&quot;http://jmini.github.io/blog/2016/2016-09-16_installation-oomph-editor.png&quot; /&gt; 
+ &lt;/div&gt; 
+ &lt;div class=&quot;title&quot;&gt;
+  Figure 2. Oomph setup Editor: installation.setup File
+ &lt;/div&gt; 
+&lt;/div&gt; 
+&lt;div class=&quot;paragraph&quot;&gt; 
+ &lt;p&gt;In both cases, after the restart you can press &lt;span class=&quot;keyseq&quot;&gt;&lt;kbd&gt;alt&lt;/kbd&gt;+&lt;kbd&gt;shift&lt;/kbd&gt;+&lt;kbd&gt;f1&lt;/kbd&gt;&lt;/span&gt; and use the Plug-in Spy as in &lt;a href=&quot;http://jmini.github.io/feed.xml#img-spy&quot;&gt;Figure 3&lt;/a&gt;.&lt;/p&gt; 
+&lt;/div&gt; 
+&lt;div class=&quot;imageblock&quot; id=&quot;img-spy&quot;&gt; 
+ &lt;div class=&quot;content&quot;&gt; 
+  &lt;img alt=&quot;2016 09 16 plugin spy&quot; src=&quot;http://jmini.github.io/blog/2016/2016-09-16_plugin-spy.png&quot; /&gt; 
+ &lt;/div&gt; 
+ &lt;div class=&quot;title&quot;&gt;
+  Figure 3. Plug-in Spy in Eclipse Neon
+ &lt;/div&gt; 
+&lt;/div&gt;</description>
+	<pubDate>Thu, 15 Sep 2016 22:00:00 +0000</pubDate>
+</item>
+<item>
+	<title>Christian Pontesegger: Oomph 04: P2 install tasks</title>
+	<guid isPermaLink="false">tag:blogger.com,1999:blog-3460102793186140898.post-3346836132666848238</guid>
+	<link>http://codeandme.blogspot.com/2016/09/oomph-04-p2-install-tasks.html</link>
+	<description>Form this tutorial onwards we are going to extend our project setup step by step. Today we are looking how to install additional plugins and features to our setup.&lt;br /&gt;&lt;br /&gt;Source code for this tutorial is available on github as a &lt;a href=&quot;https://github.com/Pontesegger/codeandme/blob/master/Code%20&amp;amp;%20Me%20Blog/oomph_04_p2_install_tasks.zip?raw=true&quot;&gt;single zip archive&lt;/a&gt;, as a &lt;a href=&quot;https://github.com/Pontesegger/codeandme/blob/master/Code%20&amp;amp;%20Me%20Blog/oomph_04_p2_install_tasks.psf?raw=true&quot;&gt;Team Project Set&lt;/a&gt; or you can &lt;a href=&quot;https://github.com/Pontesegger/codeandme/tree/master/oomph/04_p2_install_tasks&quot; target=&quot;_blank&quot;&gt;browse the files&lt;/a&gt; online.   &lt;br /&gt;&lt;br /&gt;For a list of all Oomph related tutorials see my &lt;a href=&quot;http://codeandme.blogspot.co.at/p/oomph-articles.html&quot; target=&quot;_blank&quot;&gt;Oomph Tutorials Overview&lt;/a&gt;.&lt;br /&gt;&lt;br /&gt;&lt;u&gt;&lt;b&gt;Step 1: Add the Repository&lt;/b&gt;&lt;/u&gt;&lt;br /&gt;&lt;br /&gt;Open your Oomph setup file and create a new task of type &lt;i&gt;P2 Director&lt;/i&gt;. To install components we need to provide a p2 site location and components from that location to install. So create a new &lt;i&gt;Repository&lt;/i&gt; child to our task. When selected the &lt;i&gt;Properties&lt;/i&gt; view will ask for a &lt;i&gt;URL&lt;/i&gt;. Point to the p2 location you want to install stuff from. Leave &lt;i&gt;Type&lt;/i&gt; to &lt;i&gt;Combined&lt;/i&gt;. If you do not know about repository types you definitely do not need to change this setting.&lt;br /&gt;&lt;div class=&quot;separator&quot; style=&quot;clear: both; text-align: center;&quot;&gt;&lt;a href=&quot;https://4.bp.blogspot.com/-B-BCCTTCdTA/V9qsHNOMTSI/AAAAAAAAAr8/kMKmu0Qzzq0kEli_-vQJzs0EFFZEM9_KwCLcB/s1600/oomph_01.png&quot; style=&quot;margin-left: 1em; margin-right: 1em;&quot;&gt;&lt;img border=&quot;0&quot; height=&quot;261&quot; src=&quot;https://4.bp.blogspot.com/-B-BCCTTCdTA/V9qsHNOMTSI/AAAAAAAAAr8/kMKmu0Qzzq0kEli_-vQJzs0EFFZEM9_KwCLcB/s400/oomph_01.png&quot; width=&quot;400&quot; /&gt;&lt;/a&gt;&lt;/div&gt;When you are working with a p2 site provided by eclipse, Oomph can help to &lt;a href=&quot;https://wiki.eclipse.org/Eclipse_Oomph_Authoring#How_to_find_a_P2_repository_at_Eclipse_using_the_Repository_Explorer&quot; target=&quot;_blank&quot;&gt;identify update site locations&lt;/a&gt;.&lt;br /&gt;&lt;br /&gt;&lt;u&gt;&lt;b&gt;Step 2: Add features&lt;/b&gt;&lt;/u&gt;&lt;br /&gt;&lt;br /&gt;Once you added the repository you can start to add features to be installed from that site. The manual way requires you to create a new child node of type &lt;i&gt;Requirement&lt;/i&gt;. Go to its &lt;i&gt;Properties&lt;/i&gt; and set &lt;i&gt;Name&lt;/i&gt; to the feature id you want to install. You may add version ranges or make installs optional (which means do not throw an error when the feature cannot be installed).&lt;br /&gt;&lt;div class=&quot;separator&quot; style=&quot;clear: both; text-align: center;&quot;&gt;&lt;a href=&quot;https://2.bp.blogspot.com/-W-4H7P8wn2c/V9qseNzB07I/AAAAAAAAAsA/AODSqI62cvYGxt_x-lxisQQHu96VV_6CgCLcB/s1600/oomph_02.png&quot; style=&quot;margin-left: 1em; margin-right: 1em;&quot;&gt;&lt;img border=&quot;0&quot; height=&quot;305&quot; src=&quot;https://2.bp.blogspot.com/-W-4H7P8wn2c/V9qseNzB07I/AAAAAAAAAsA/AODSqI62cvYGxt_x-lxisQQHu96VV_6CgCLcB/s400/oomph_02.png&quot; width=&quot;400&quot; /&gt;&lt;/a&gt;&lt;/div&gt;The tricky part is to find out the name of the feature you want to install. I like to use the &lt;a href=&quot;https://github.com/mbarbero/fr.obeo.releng.targetplatform&quot; target=&quot;_blank&quot;&gt;target platform editor&lt;/a&gt; from Mickael Barbero with its nice code completion features. An even simpler way is to use the &lt;i&gt;Repository Explorer&lt;/i&gt; from Oomph:&lt;br /&gt;&lt;br /&gt;Right click on your &lt;i&gt;Repository&lt;/i&gt; node and select &lt;i&gt;Explore&lt;/i&gt;. The &lt;i&gt;Repository Explorer&lt;/i&gt; view comes up and displays features the same way as you might know it from the eclipse p2 installer. Now you can drag and drop entries to your P2 Director task.&lt;br /&gt;&lt;br /&gt;&lt;div class=&quot;separator&quot; style=&quot;clear: both; text-align: center;&quot;&gt;&lt;a href=&quot;https://3.bp.blogspot.com/-k6gZ2fWNXt0/V9qs2Er0SPI/AAAAAAAAAsE/0I-iDlIcSLQHzIEW7JjvrnRAjud1_eeWgCLcB/s1600/oomph_03.png&quot; style=&quot;margin-left: 1em; margin-right: 1em;&quot;&gt;&lt;img border=&quot;0&quot; height=&quot;303&quot; src=&quot;https://3.bp.blogspot.com/-k6gZ2fWNXt0/V9qs2Er0SPI/AAAAAAAAAsE/0I-iDlIcSLQHzIEW7JjvrnRAjud1_eeWgCLcB/s400/oomph_03.png&quot; width=&quot;400&quot; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;br /&gt;</description>
+	<pubDate>Thu, 15 Sep 2016 14:15:01 +0000</pubDate>
+	<author>noreply@blogger.com (Christian Pontesegger)</author>
+</item>
+<item>
+	<title>Eclipse Announcements: Keynotes, Tracks and Sponsors Announced for the 11th Annual EclipseCon Europe Conference</title>
+	<guid isPermaLink="true">http://feedproxy.google.com/~r/eclipse/fnews/~3/yjwACz5QV7g/20160914_ece2016.php</guid>
+	<link>http://feedproxy.google.com/~r/eclipse/fnews/~3/yjwACz5QV7g/20160914_ece2016.php</link>
+	<description>The Eclipse Foundation is pleased to announce EclipseCon Europe 2016.&lt;img alt=&quot;&quot; height=&quot;1&quot; src=&quot;http://feeds.feedburner.com/~r/eclipse/fnews/~4/yjwACz5QV7g&quot; width=&quot;1&quot; /&gt;</description>
+	<pubDate>Thu, 15 Sep 2016 13:19:30 +0000</pubDate>
+</item>
+<item>
+	<title>Lars Vogel: Contribute to the vogella Android tutorials via Github pull requests</title>
+	<guid isPermaLink="false">http://blog.vogella.com/?p=7474</guid>
+	<link>http://blog.vogella.com/2016/09/15/contribute-to-the-vogella-android-tutorials-via-github-pull-requests/</link>
+	<description>&lt;p&gt;If you want to contribute an improvement to the &lt;a href=&quot;http://www.vogella.com/tutorials/android.html&quot;&gt;vogella Android tutorials&lt;/a&gt;, we are providing our Android tutorials Asciidoc source code via Github. Please clone and send your Pull Requests.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/vogellacompany/com.vogella.tutorials.android&quot;&gt;vogella Android tutorial at Github&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Thanks for your contributions and lets kill all these typos. &lt;img alt=&quot;:-)&quot; class=&quot;wp-smiley&quot; src=&quot;http://blog.vogella.com/wp-includes/images/smilies/simple-smile.png&quot; style=&quot;height: 1em;&quot; /&gt;&lt;/p&gt;</description>
+	<pubDate>Thu, 15 Sep 2016 06:25:42 +0000</pubDate>
+</item>
+<item>
+	<title>Wayne Beaton: Java 9 module-info Files in the Eclipse IDE</title>
+	<guid isPermaLink="false">http://waynebeaton.wordpress.com/?p=3720</guid>
+	<link>https://waynebeaton.wordpress.com/2016/09/14/java-9-module-info-files-in-the-eclipse-ide/</link>
+	<description>&lt;p&gt;&lt;em&gt;Note that this post is not intended to be a status update; it’s just a quick update based on some experimenting that I’ve been doing with the beta code.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;It’s been a while, but I’m back to experimenting in Java 9 support in the Eclipse IDE.&lt;/p&gt;
+&lt;p&gt;For testing purposes, I downloaded the most recent &lt;em&gt;Oxygen&lt;/em&gt; (4.7) &lt;a href=&quot;http://download.eclipse.org/eclipse/downloads/&quot;&gt;integration build&lt;/a&gt; (I20160914-0800) from the Eclipse Project downloads the latest  &lt;a href=&quot;https://jdk9.java.net/download/&quot;&gt;Java 9 JRE build&lt;/a&gt; (135).&lt;/p&gt;
+&lt;p&gt;I configured the Eclipse IDE to run on the Java 9 JVM. This still requires a minor change in the eclipse.ini file: to launch successfully, you must add &lt;code&gt;--add-modules=java.se.ee&lt;/code&gt; to the &lt;code&gt;vmargs&lt;/code&gt; section (I expect this to be resolved before Java 9 support is officially released; see &lt;a href=&quot;https://bugs.eclipse.org/bugs/show_bug.cgi?id=493761&quot;&gt;Bug 493761&lt;/a&gt; for more information). I used and used the &lt;em&gt;Install new software…&lt;/em&gt; dialog to pull in updates from the BETA_JAVA9 SDK builds repository (see the &lt;a href=&quot;https://wiki.eclipse.org/Java9&quot;&gt;Java9&lt;/a&gt; Eclipsepedia page for more information).&lt;/p&gt;
+&lt;p&gt;I created a very simple Java application with a &lt;code&gt;module-info.java&lt;/code&gt; file. Content assist is available for this file.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&quot;screenshot-from-2016-09-14-14-27-24&quot; class=&quot;alignnone size-full wp-image-3722&quot; src=&quot;https://waynebeaton.files.wordpress.com/2016/09/screenshot-from-2016-09-14-14-27-24.png?w=640&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Note that there is an error indicated on the import of &lt;code&gt;java.awt.Frame&lt;/code&gt;. This error exists because the module info file does not provide visibility to that class (AWT is not included with &lt;code&gt;java.base&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;If we change that requires statement, the visibility issue is resolved and the compiler is happy. Well, mostly happy. Apparently not using declared variables gets you a stern warning (this is, of course, configurable).&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&quot;screenshot-from-2016-09-14-14-27-51&quot; class=&quot;alignnone size-full wp-image-3721&quot; src=&quot;https://waynebeaton.files.wordpress.com/2016/09/screenshot-from-2016-09-14-14-27-51.png?w=640&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;The Eclipse Project is planning to ship support as part of an &lt;a href=&quot;http://www.eclipse.org/neon&quot;&gt;Eclipse Neon&lt;/a&gt; update release that coincides with the official release date of Java 9. I’ll be talking a bit about this during my JavaOne talk and demonstrating this (and more Java topics) at the Eclipse Foundation’s booth.&lt;/p&gt;
+&lt;blockquote&gt;&lt;p&gt;Conference: JavaOne&lt;br /&gt;
+Session Type: Conference Session&lt;br /&gt;
+Session ID: CON6469&lt;br /&gt;
+Session Title: Developing Java Applications with Eclipse Neon&lt;br /&gt;
+Room: Hilton—Continental Ballroom 6&lt;br /&gt;
+Date and Time: 09/19/16, 11:00:00 AM – 12:00:00 PM&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;The call for papers for &lt;a href=&quot;http://devoxx.us/&quot;&gt;Devoxx US&lt;/a&gt; is open. Devoxx is a community conference from developers for developers. &lt;a href=&quot;http://cfp.devoxx.us/&quot;&gt;Submit your proposal&lt;/a&gt; now.&lt;/p&gt;&lt;br /&gt;  &lt;a href=&quot;http://feeds.wordpress.com/1.0/gocomments/waynebeaton.wordpress.com/3720/&quot; rel=&quot;nofollow&quot;&gt;&lt;img alt=&quot;&quot; border=&quot;0&quot; src=&quot;http://feeds.wordpress.com/1.0/comments/waynebeaton.wordpress.com/3720/&quot; /&gt;&lt;/a&gt; &lt;img alt=&quot;&quot; border=&quot;0&quot; height=&quot;1&quot; src=&quot;https://pixel.wp.com/b.gif?host=waynebeaton.wordpress.com&amp;amp;blog=19425814&amp;amp;post=3720&amp;amp;subd=waynebeaton&amp;amp;ref=&amp;amp;feed=1&quot; width=&quot;1&quot; /&gt;</description>
+	<pubDate>Wed, 14 Sep 2016 19:31:44 +0000</pubDate>
+</item>
+<item>
+	<title>vert.x project: Vert.x 3.3.3 is released !</title>
+	<guid isPermaLink="true">http://vertx.io/blog/vert-x-3-3-3-is-released</guid>
+	<link>http://vertx.io/blog/vert-x-3-3-3-is-released</link>
+	<description>&lt;article&gt;&lt;p&gt;We have just released Vert.x 3.3.3, a bug fix release of Vert.x 3.3.x.&lt;/p&gt;
+&lt;p&gt;Since the release of Vert.x 3.3.2, quite a few bugs have been reported. We would like to thank you all for reporting these issues.&lt;/p&gt;
+&lt;p&gt;Vert.x 3.3.3 release notes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/vert-x3/wiki/wiki/3.3.3---Release-Notes&quot;&gt;https://github.com/vert-x3/wiki/wiki/3.3.3---Release-Notes&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The event bus client using the SockJS bridge are available from NPM, Bower and as a WebJar:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/vertx3-eventbus-client&quot;&gt;https://www.npmjs.com/package/vertx3-eventbus-client&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/vert-x3/vertx-bus-bower&quot;&gt;https://github.com/vert-x3/vertx-bus-bower&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.webjars.org/&quot;&gt;http://www.webjars.org/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Docker images are also available on the &lt;a href=&quot;https://hub.docker.com/u/vertx/&quot;&gt;Docker Hub&lt;/a&gt;. The Vert.x distribution is also available from &lt;a href=&quot;http://sdkman.io/index.html&quot;&gt;SDKMan&lt;/a&gt; and &lt;a href=&quot;http://brew.sh/&quot;&gt;HomeBrew&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The artifacts have been deployed to &lt;a href=&quot;http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22io.vertx%22%20AND%20v%3A%223.3.3%22&quot;&gt;Maven Central&lt;/a&gt; and you can get the distribution on &lt;a href=&quot;https://bintray.com/vertx/downloads/distribution/3.3.3/view&quot;&gt;Bintray&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Happy coding !&lt;/p&gt;
+&lt;/article&gt;</description>
+	<pubDate>Mon, 12 Sep 2016 00:00:00 +0000</pubDate>
+</item>
+<item>
+	<title>Ekkehard Gentz: Qt World Summit 2016 San Francisco Conference App: Behind The Scenes</title>
+	<guid isPermaLink="false">http://ekkescorner.wordpress.com/?p=4340</guid>
+	<link>https://ekkescorner.wordpress.com/2016/09/09/qt-world-summit-2016-san-francisco-conference-app-behind-the-scenes/</link>
+	<description>&lt;h1&gt;Qt World Summit 2016&lt;/h1&gt;
+&lt;p&gt;Meet me at this years &lt;a href=&quot;https://www.qtworldsummit.com/&quot; target=&quot;_blank&quot;&gt;Qt World Summit 2016 in San Francisco&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.qtworldsummit.com/&quot;&gt;&lt;img alt=&quot;qtws16_sfo&quot; class=&quot;alignnone wp-image-4341 size-large&quot; height=&quot;188&quot; src=&quot;https://ekkescorner.files.wordpress.com/2016/09/qtws16_sfo.png?w=550&amp;amp;h=188&quot; width=&quot;550&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I’ll speak about development of upcoming Qt World Summit Conference App running on&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;BlackBerry 10 (Qt 4.8, Cascades)&lt;/li&gt;
+&lt;li&gt;Qt 5.7 (Qt Quick Controls 2)
+&lt;ul&gt;
+&lt;li&gt;Android&lt;/li&gt;
+&lt;li&gt;iOS&lt;/li&gt;
+&lt;li&gt;Windows 10&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;My Session&lt;/h1&gt;
+&lt;p&gt;See how easy it is to develop cross-platform mobile Apps using Qt 5.7+ and new Qt QuickControls 2&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&quot;qtws16_session_ekke&quot; class=&quot;alignnone wp-image-4342 size-large&quot; height=&quot;727&quot; src=&quot;https://ekkescorner.files.wordpress.com/2016/09/qtws16_session_ekke.png?w=550&amp;amp;h=727&quot; style=&quot;border: 1px solid #000000;&quot; width=&quot;550&quot; /&gt;&lt;/p&gt;
+&lt;h1&gt;BlackBerry 10 Cascades Development ?&lt;/h1&gt;
+&lt;p&gt;Already have BlackBerry 10 Apps (Cascades) ? Learn how to save your investment: most C++ Code für Business Logic, REST / Web Services, Persistence (SQLite, JSON) can be re-used and the app architecture is similar using Qt SIGNALS – SLOTS concept.&lt;/p&gt;
+&lt;p&gt;cu in San Francisco&lt;/p&gt;&lt;br /&gt;Filed under: &lt;a href=&quot;https://ekkescorner.wordpress.com/category/bb10/&quot;&gt;BB10&lt;/a&gt;, &lt;a href=&quot;https://ekkescorner.wordpress.com/category/bb10/c/&quot;&gt;C++&lt;/a&gt;, &lt;a href=&quot;https://ekkescorner.wordpress.com/category/bb10/cascades/&quot;&gt;Cascades&lt;/a&gt;, &lt;a href=&quot;https://ekkescorner.wordpress.com/category/mobile/&quot;&gt;mobile&lt;/a&gt;, &lt;a href=&quot;https://ekkescorner.wordpress.com/category/qt/&quot;&gt;Qt&lt;/a&gt;  &lt;img alt=&quot;&quot; border=&quot;0&quot; height=&quot;1&quot; src=&quot;https://pixel.wp.com/b.gif?host=ekkescorner.wordpress.com&amp;amp;blog=7691743&amp;amp;post=4340&amp;amp;subd=ekkescorner&amp;amp;ref=&amp;amp;feed=1&quot; width=&quot;1&quot; /&gt;</description>
+	<pubDate>Fri, 09 Sep 2016 12:02:00 +0000</pubDate>
+</item>
+<item>
+	<title>Leo Ufimtsev: Running nightly Eclipse for the impatient</title>
+	<guid isPermaLink="false">http://coffeeorientedprogramming.com/?p=216</guid>
+	<link>https://coffeeorientedprogramming.com/2016/09/08/running-nightly-eclipse-for-the-impatient/</link>
+	<description>&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;&lt;img alt=&quot;Eclipse-Icon.png&quot; class=&quot;aligncenter  wp-image-308&quot; height=&quot;60&quot; src=&quot;https://coffeeorientedprogramming.files.wordpress.com/2016/09/eclipse-icon.png?w=60&amp;amp;h=60&quot; width=&quot;60&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;If you’re an Eclipse developer, you might consider running a nightly version of Eclipse so that you can easily test out the latest patches. Bleeding edge is the cool stuff right? It’s actually surprisingly quite stable.&lt;/p&gt;
+&lt;p&gt;The advantage of this setup is that you won’t have to re-download a new version and re-download all the plugins over and over. You just configure the thing once and just click on ‘check for updates’ once in a while.&lt;/p&gt;
+&lt;p&gt;The setup is a little bit counter intuitive. This article is not just ‘follow these steps’, but more about understanding the mechanism and workflow.&lt;/p&gt;
+&lt;p&gt;&lt;span id=&quot;more-216&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;h3&gt;My Experience with using nightly for 4 months&lt;/h3&gt;
+&lt;p&gt;Eclipse doesn’t actually auto-update on it’s own. You manually trigger an update by going to help-&amp;gt;check for updates. So you never really have the situation where one day Eclipse randomly stops working.&lt;br /&gt;
+I don’t update my eclipse every day actually. Perhaps only once every 2-3 weeks or when I want run the latest patch. I’ve never had Eclipse break on me during the process, but never the less I tend to backup my Eclipse before every update via a bash script.&lt;/p&gt;
+&lt;h3&gt;Pre-requisite: Understanding update sites&lt;/h3&gt;
+&lt;p&gt;Instead of re-downloading eclipse each time, you can simply configure it to pull it’s packages from update sites. There are different update sites for different parts of Eclipse.&lt;/p&gt;
+&lt;p&gt;The list of core update sites can be found via:&lt;br /&gt;
+Google: “Eclipse update sites” -&amp;gt;&lt;br /&gt;
+&lt;a href=&quot;https://wiki.eclipse.org/Eclipse_Project_Update_Sites&quot;&gt;https://wiki.eclipse.org/Eclipse_Project_Update_Sites&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;Types of update sites&lt;/h4&gt;
+&lt;p&gt;There are two important update sites that you have to be aware of. “Update” and “Release”.&lt;br /&gt;
+“&lt;strong&gt;Update&lt;/strong&gt;” contains core Eclipse components, ex platform.ui. Ex:&lt;br /&gt;
+&lt;a href=&quot;http://download.eclipse.org/eclipse/&quot; rel=&quot;nofollow&quot;&gt;http://download.eclipse.org/eclipse/&lt;/a&gt;&lt;strong&gt;&lt;span style=&quot;text-decoration: underline;&quot;&gt;updates&lt;/span&gt;&lt;/strong&gt;/4.7-N-builds/&lt;/p&gt;
+&lt;p&gt;“&lt;strong&gt;Release&lt;/strong&gt;” contains additional plugins like mylyn, etc..&lt;br /&gt;
+&lt;a href=&quot;http://download.eclipse.org/releases/neon/&quot; rel=&quot;nofollow&quot;&gt;http://download.eclipse.org/releases/neon/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;But there are others, CDT, Orbit etc.. You can often find them by googling “PLUGIN-NAME update site”.&lt;/p&gt;
+&lt;h4&gt;Which update sites to pick for ‘nighties’?&lt;/h4&gt;
+&lt;p&gt;In general when you develop version N+1 (where N+1 is not released yet), you point to update sites of N, (because N+1 repositories are not released yet). Once N+1 is released, it becomes N and you change your update sites accordingly.&lt;/p&gt;
+&lt;p&gt;For example, I currently work on Oxygen, but I’m pointing my update sites to pull from ‘Neon’ (where Neon is older than Oxygen, N &amp;lt; O).&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Also observe, you want something with ‘N’ in the name (nightly). Ex:&lt;br /&gt;
+&lt;a href=&quot;http://download.eclipse.org/eclipse/updates/4.7-&quot; rel=&quot;nofollow&quot;&gt;http://download.eclipse.org/eclipse/updates/4.7-&lt;/a&gt;&lt;span style=&quot;color: #ff0000;&quot;&gt;&lt;strong&gt;N&lt;/strong&gt;&lt;/span&gt;-builds/&lt;/li&gt;
+&lt;li&gt;Be careful with repos that point to ‘newest’ repos, ex:&lt;br /&gt;
+&lt;a href=&quot;http://download.eclipse.org/eclipse/updates/N-builds&quot; rel=&quot;nofollow&quot;&gt;http://download.eclipse.org/eclipse/updates/N-builds&lt;/a&gt;&lt;br /&gt;
+in my experience they don’t seem to function all the time. I usually pick them manually (ex 4.7) and update them once a year by hand.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Setup&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;You download and extract a nightly eclipse, see ‘Nightly’ &lt;a href=&quot;http://download.eclipse.org/eclipse/&quot;&gt;http://download.eclipse.org/eclipse/ &lt;/a&gt; Like N201xxxxxxxxxxxx. Put it somewhere where you won’t accidentally delete it. (ex ~/apps/)&lt;/li&gt;
+&lt;li&gt;Open Eclipse, go to Window -&amp;gt; Preference -&amp;gt; Install/Update -&amp;gt; Available Software sites&lt;/li&gt;
+&lt;li&gt;Remove (or disable) existing update sites in the list. (they get in the way, sometimes they re-activate them selves, so I just delete them).&lt;/li&gt;
+&lt;li&gt;Add your own sites from &lt;a href=&quot;https://wiki.eclipse.org/Eclipse_Project_Update_Sites&quot;&gt;here&lt;/a&gt;:
+&lt;ul&gt;
+&lt;li&gt;Ex: If you’re developing Oxygen, pick the ‘Neon’ update sites. (see above), ex:&lt;br /&gt;
+&lt;a href=&quot;http://download.eclipse.org/eclipse/updates/4.7-N-builds/&quot; rel=&quot;nofollow&quot;&gt;http://download.eclipse.org/eclipse/updates/4.7-N-builds/&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;http://download.eclipse.org/releases/neon/&quot; rel=&quot;nofollow&quot;&gt;http://download.eclipse.org/releases/neon/&lt;/a&gt;&lt;br /&gt;
+Should look like this:&lt;br /&gt;
+&lt;img alt=&quot;Selection_055.png&quot; class=&quot;alignnone size-full wp-image-297&quot; src=&quot;https://coffeeorientedprogramming.files.wordpress.com/2016/09/selection_055.png?w=680&quot; /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Now you’re ready to roll. You can install your desired plugins (ex mylyn, SWT Tools, git integration etc.)&lt;/p&gt;
+&lt;p&gt;To update this business, make a backup of your downloaded Eclipse (and maybe workspace), go to help -&amp;gt; check for updates.&lt;/p&gt;
+&lt;p&gt;If you have questions / feedback / suggestions, please post comments.&lt;/p&gt;
+&lt;p&gt;For more details on update, check out Vogella:&lt;br /&gt;
+&lt;a href=&quot;http://www.vogella.com/tutorials/Eclipse/article.html#updates-and-installation-of-plug-ins&quot;&gt;http://www.vogella.com/tutorials/Eclipse/article.html#updates-and-installation-of-plug-ins&lt;/a&gt;&lt;/p&gt;&lt;br /&gt;  &lt;a href=&quot;http://feeds.wordpress.com/1.0/gocomments/coffeeorientedprogramming.wordpress.com/216/&quot; rel=&quot;nofollow&quot;&gt;&lt;img alt=&quot;&quot; border=&quot;0&quot; src=&quot;http://feeds.wordpress.com/1.0/comments/coffeeorientedprogramming.wordpress.com/216/&quot; /&gt;&lt;/a&gt; &lt;img alt=&quot;&quot; border=&quot;0&quot; height=&quot;1&quot; src=&quot;https://pixel.wp.com/b.gif?host=coffeeorientedprogramming.com&amp;amp;blog=74903670&amp;amp;post=216&amp;amp;subd=coffeeorientedprogramming&amp;amp;ref=&amp;amp;feed=1&quot; width=&quot;1&quot; /&gt;</description>
+	<pubDate>Thu, 08 Sep 2016 18:21:56 +0000</pubDate>
+</item>
+<item>
+	<title>vert.x project: Centralized logging for Vert.x applications using the ELK stack</title>
+	<guid isPermaLink="true">http://vertx.io/blog/centralized-logging-for-vert-x-applications-using-the-elk-stack</guid>
+	<link>http://vertx.io/blog/centralized-logging-for-vert-x-applications-using-the-elk-stack</link>
+	<description>&lt;article&gt;&lt;p&gt;This post entry describes a solution to achieve centralized logging of Vert.x applications using the &lt;a href=&quot;https://www.elastic.co/webinars/introduction-elk-stack&quot;&gt;ELK stack&lt;/a&gt;, a set of tools including Logstash, Elasticsearch, and Kibana that are well known to work together seamlessly.&lt;/p&gt;
+&lt;h2 id=&quot;table-of-contents&quot;&gt;Table of contents&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://vertx.io/feed.xml#preamble&quot;&gt;Preamble&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://vertx.io/feed.xml#introduction&quot;&gt;Introduction&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://vertx.io/feed.xml#overview&quot;&gt;Overview&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://vertx.io/feed.xml#app-logging-configuration&quot;&gt;App logging configuration&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://vertx.io/feed.xml#log4j-logging&quot;&gt;Log4j logging&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://vertx.io/feed.xml#filebeat-configuration&quot;&gt;Filebeat configuration&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://vertx.io/feed.xml#elk-configuration&quot;&gt;ELK configuration&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://vertx.io/feed.xml#logstash&quot;&gt;Logstash&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://vertx.io/feed.xml#elasticsearch&quot;&gt;Elasticsearch&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://vertx.io/feed.xml#kibana&quot;&gt;Kibana&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://vertx.io/feed.xml#log-shipping-challenge&quot;&gt;Log shipping challenge&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://vertx.io/feed.xml#demo&quot;&gt;Demo&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://vertx.io/feed.xml#installation&quot;&gt;Installation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://vertx.io/feed.xml#building-the-example&quot;&gt;Building the example&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://vertx.io/feed.xml#building-the-vertx-microservices-workshop-docker-images&quot;&gt;Building the Vert.x Microservices workshop Docker images&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://vertx.io/feed.xml#running-the-example&quot;&gt;Running the example&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://vertx.io/feed.xml#the-demo&quot;&gt;The demo&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://vertx.io/feed.xml#conclusion&quot;&gt;Conclusion&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;preamble&quot;&gt;Preamble&lt;/h2&gt;
+&lt;p&gt;This post was written in context of the project titled “&lt;a href=&quot;https://summerofcode.withgoogle.com/projects/#4858492141699072&quot;&gt;DevOps tooling for Vert.x applications&lt;/a&gt;“, one of the Vert.x projects taking place during the 2016 edition of &lt;a href=&quot;https://summerofcode.withgoogle.com/about/&quot;&gt;Google Summer of Code&lt;/a&gt;, a program that aims to bring together students with open source organizations, in order to help them to gain exposure to software development practices and real-world challenges.&lt;/p&gt;
+&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Centralized logging is an important topic while building a Microservices architecture and it is a step forward to adopting the DevOps culture. Having an overall solution partitioned into a set of services distributed across the Internet can represent a challenge when trying to monitor the log output of each of them, hence, a tool that helps to accomplish this results very helpful.&lt;/p&gt;
+&lt;h2 id=&quot;overview&quot;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;As shown in the diagram below, the general centralized logging solution comprises two main elements: the application server, which runs our Vert.x application; and a separate server, hosting the ELK stack. Both elements are linked by Filebeat, a highly configurable tool capable of shipping our application logs to the Logstash instance, i.e., our gateway to the ELK stack.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&quot;Overview of centralized logging with ELK&quot; src=&quot;http://vertx.io/assets/blog/centralized-logging-using-elk/elk-overview.svg&quot; /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;app-logging-configuration&quot;&gt;App logging configuration&lt;/h2&gt;
+&lt;p&gt;The approach described here is based on a Filebeat + Logstash configuration, that means first we need to make sure our app logs to a file, whose records will be shipped to Logstash by Filebeat. Luckily, Vert.x provides the means to &lt;a href=&quot;http://vertx.io/docs/vertx-core/java/#_logging&quot;&gt;configure&lt;/a&gt; alternative logging frameworks (e.g., Log4j, Log4j2 and SLF4J) besides the default JUL logging. However, we can use Filebeat independently of the logging framework chosen.&lt;/p&gt;
+&lt;h3 id=&quot;log4j-logging&quot;&gt;Log4j Logging&lt;/h3&gt;
+&lt;p&gt;The demo that accompanies this post relies on Log4j2 as the logging framework. We instructed Vert.x to use this framework following the &lt;a href=&quot;http://vertx.io/docs/vertx-core/java/#_logging&quot;&gt;guidelines&lt;/a&gt; and we made sure our logging calls are made asynchronous, since we don’t want them to block our application. For this purpose, we opted for the &lt;code&gt;AsyncAppender&lt;/code&gt; and this was included in the Log4J configuration together with the log output format described in a XML configuration available in the application’s &lt;em&gt;Resource&lt;/em&gt; folder.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;hljs xml&quot;&gt;&lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;Configuration&lt;/span&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;Appenders&lt;/span&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;RollingFile&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;name&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&quot;vertx_logs&quot;&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;append&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&quot;true&quot;&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;fileName&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&quot;/var/log/vertx.log&quot;&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;filePattern&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&quot;/var/log/vertx/$${date:yyyy-MM}/vertx-%d{MM-dd-yyyy}-%i.log.gz&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;PatternLayout&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;pattern&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&quot;%d{ISO8601} %-5p %c:%L - %m%n&quot;&lt;/span&gt; /&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;hljs-tag&quot;&gt;&lt;span class=&quot;hljs-title&quot;&gt;RollingFile&lt;/span&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;Async&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;name&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&quot;vertx_async&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;AppenderRef&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;ref&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&quot;vertx_logs&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;hljs-tag&quot;&gt;&lt;span class=&quot;hljs-title&quot;&gt;Async&lt;/span&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;hljs-tag&quot;&gt;&lt;span class=&quot;hljs-title&quot;&gt;Appenders&lt;/span&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;Loggers&lt;/span&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;Root&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;level&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&quot;DEBUG&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;hljs-tag&quot;&gt;&amp;lt;&lt;span class=&quot;hljs-title&quot;&gt;AppenderRef&lt;/span&gt; &lt;span class=&quot;hljs-attribute&quot;&gt;ref&lt;/span&gt;=&lt;span class=&quot;hljs-value&quot;&gt;&quot;vertx_async&quot;&lt;/span&gt; /&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;hljs-tag&quot;&gt;&lt;span class=&quot;hljs-title&quot;&gt;Root&lt;/span&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;hljs-tag&quot;&gt;&lt;span class=&quot;hljs-title&quot;&gt;Loggers&lt;/span&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;hljs-tag&quot;&gt;&lt;span class=&quot;hljs-title&quot;&gt;Configuration&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;filebeat-configuration&quot;&gt;Filebeat configuration&lt;/h3&gt;
+&lt;p&gt;Now that we have configured the log output of our Vert.x application to be stored in the file system, we delegate to Filebeat the task of forwarding the logs to the Logstash instance. Filebeat can be configured through a YAML file containing the logs output location and the pattern to interpret multiline logs (i.e., stack traces). Also, the Logstash output plugin is configured with the host location and a secure connection is enforced using the certificate from the machine hosting Logstash. We set the &lt;code&gt;document_type&lt;/code&gt; to the type of instance that this log belongs to, which could later help us while indexing our logs inside Elasticsearch.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&lt;span class=&quot;hljs-attribute&quot;&gt;filebeat&lt;/span&gt;:
+  &lt;span class=&quot;hljs-attribute&quot;&gt;prospectors&lt;/span&gt;:
+    -
+      &lt;span class=&quot;hljs-attribute&quot;&gt;document_type&lt;/span&gt;: trader_dashboard
+      &lt;span class=&quot;hljs-attribute&quot;&gt;paths&lt;/span&gt;:
+        - /var/log/vertx.log
+      &lt;span class=&quot;hljs-attribute&quot;&gt;multiline&lt;/span&gt;:
+        &lt;span class=&quot;hljs-attribute&quot;&gt;pattern&lt;/span&gt;: &lt;span class=&quot;hljs-string&quot;&gt;&quot;^[0-9]+&quot;&lt;/span&gt;
+        &lt;span class=&quot;hljs-attribute&quot;&gt;negate&lt;/span&gt;: true
+        &lt;span class=&quot;hljs-attribute&quot;&gt;match&lt;/span&gt;: after
+&lt;span class=&quot;hljs-attribute&quot;&gt;output&lt;/span&gt;:
+  &lt;span class=&quot;hljs-attribute&quot;&gt;logstash&lt;/span&gt;:
+    &lt;span class=&quot;hljs-attribute&quot;&gt;enabled&lt;/span&gt;: true
+    &lt;span class=&quot;hljs-attribute&quot;&gt;hosts&lt;/span&gt;:
+      - &lt;span class=&quot;hljs-attribute&quot;&gt;elk&lt;/span&gt;:&lt;span class=&quot;hljs-number&quot;&gt;5044&lt;/span&gt;
+    &lt;span class=&quot;hljs-attribute&quot;&gt;timeout&lt;/span&gt;: &lt;span class=&quot;hljs-number&quot;&gt;15&lt;/span&gt;
+    &lt;span class=&quot;hljs-attribute&quot;&gt;tls&lt;/span&gt;:
+      &lt;span class=&quot;hljs-attribute&quot;&gt;insecure&lt;/span&gt;: false
+      &lt;span class=&quot;hljs-attribute&quot;&gt;certificate_authoritites&lt;/span&gt;:
+        - /etc/pki/tls/certs/logstash-beats.crt&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;elk-configuration&quot;&gt;ELK configuration&lt;/h2&gt;
+&lt;p&gt;To take fully advantage of the ELK stack with respect to Vert.x and our app logs, we need to configure each of its individual components, namely Logstash, Elasticsearch and Kibana.&lt;/p&gt;
+&lt;h3 id=&quot;logstash&quot;&gt;Logstash&lt;/h3&gt;
+&lt;p&gt;Logstash is the component within the ELK stack that is in charge of aggregating the logs from each of the sources and forwarding them to the Elasticsearch instance.&lt;br /&gt;Configuring Logstash is straightforward with the help of the specific input and output plugins for Beats and Elasticsearch, respectively.
+In the previous section we mentioned that Filebeat could be easily coupled with Logstash. Now, we see that this can be done by just specifying &lt;code&gt;Beat&lt;/code&gt; as the input plugin and set the parameters needed to be reached by our shippers (listening port, ssl key and certificate location).&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;hljs bash&quot;&gt;input {
+  beats {
+    port =&amp;gt; &lt;span class=&quot;hljs-number&quot;&gt;5044&lt;/span&gt;
+    ssl =&amp;gt; &lt;span class=&quot;hljs-literal&quot;&gt;true&lt;/span&gt;
+    ssl_certificate =&amp;gt; &lt;span class=&quot;hljs-string&quot;&gt;&quot;/etc/pki/tls/certs/logstash-beats.crt&quot;&lt;/span&gt;
+    ssl_key =&amp;gt; &lt;span class=&quot;hljs-string&quot;&gt;&quot;/etc/pki/tls/private/logstash-beats.key&quot;&lt;/span&gt;
+  }
+}&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now that we are ready to receive logs from the app, we can use Logstash filtering capabilities to specify the format of our logs and extract the fields so they can be indexed more efficiently by Elasticsearch.&lt;br /&gt;The &lt;code&gt;grok&lt;/code&gt; filtering plugin comes handy in this situation. This plugin allows to declare the logs format using predefined and customized patterns based in regular expressions allowing to declare new fields from the information extracted from each log line. In the following block, we instruct Logstash to recognize our Log4j pattern inside a &lt;code&gt;message&lt;/code&gt; field, which contains the log message shipped by Filebeat. After that, the &lt;code&gt;date&lt;/code&gt; filtering plugin parses the &lt;code&gt;timestamp&lt;/code&gt; field extracted in the previous step and replaces it for the one set by Filebeat after reading the log output file.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;hljs bash&quot;&gt;filter {
+  grok {
+    &lt;span class=&quot;hljs-keyword&quot;&gt;break&lt;/span&gt;_on_match =&amp;gt; &lt;span class=&quot;hljs-literal&quot;&gt;false&lt;/span&gt;
+    match =&amp;gt;  [ &lt;span class=&quot;hljs-string&quot;&gt;&quot;message&quot;&lt;/span&gt;, &lt;span class=&quot;hljs-string&quot;&gt;&quot;%{LOG4J}&quot;&lt;/span&gt;]
+  }
+  date{
+    match =&amp;gt; [ &lt;span class=&quot;hljs-string&quot;&gt;&quot;timestamp_string&quot;&lt;/span&gt;, &lt;span class=&quot;hljs-string&quot;&gt;&quot;ISO8601&quot;&lt;/span&gt;]
+    remove_field =&amp;gt; [ &lt;span class=&quot;hljs-string&quot;&gt;&quot;timestamp_string&quot;&lt;/span&gt; ]
+  }
+}&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The Log4j pattern is not included within the Logstash configuration, however, we can specify it using predefined data formats shipped with Logstash and adapt it to the specific log formats required in our application, as shown next.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;hljs&quot;&gt;&lt;span class=&quot;hljs-header&quot;&gt;# Pattern to match our Log4j format&lt;/span&gt;
+SPACING (?:[\s]+)
+LOGGER (?:[&lt;span class=&quot;hljs-link_label&quot;&gt;a-zA-Z$_&lt;/span&gt;][&lt;span class=&quot;hljs-link_reference&quot;&gt;a-zA-Z$_0-9&lt;/span&gt;]&lt;span class=&quot;hljs-emphasis&quot;&gt;*\.)*&lt;/span&gt;[&lt;span class=&quot;hljs-link_label&quot;&gt;a-zA-Z$_&lt;/span&gt;][&lt;span class=&quot;hljs-link_reference&quot;&gt;a-zA-Z$_0-9&lt;/span&gt;]*
+LINE %{INT}?
+LOG4J %{TIMESTAMP&lt;span class=&quot;hljs-emphasis&quot;&gt;_ISO8601:timestamp_&lt;/span&gt;string} %{LOGLEVEL:log&lt;span class=&quot;hljs-emphasis&quot;&gt;_level}%{SPACING}%{LOGGER:logger_&lt;/span&gt;name}:%{LINE:loc&lt;span class=&quot;hljs-emphasis&quot;&gt;_line} - %{JAVALOGMESSAGE:log_&lt;/span&gt;message}&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Finally, we take a look at Logstash’s output configuration. This simply points to our elasticsearch instance, instructs it to provide a list of all cluster nodes (&lt;code&gt;sniffing&lt;/code&gt;), defines the name pattern for our indices, assigns the document type according to the metadata coming from Filebeat, and allows to define a custom index template for our data.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;hljs&quot;&gt;output {
+  elasticsearch {
+    hosts =&amp;gt; [&lt;span class=&quot;hljs-string&quot;&gt;&quot;localhost&quot;&lt;/span&gt;]
+    sniffing =&amp;gt; &lt;span class=&quot;hljs-literal&quot;&gt;true&lt;/span&gt;
+    manage_template =&amp;gt; &lt;span class=&quot;hljs-literal&quot;&gt;true&lt;/span&gt;
+    index =&amp;gt; &lt;span class=&quot;hljs-string&quot;&gt;&quot;%{[@metadata][beat]}-%{+YYYY.MM.dd}&quot;&lt;/span&gt;
+    document_type =&amp;gt; &lt;span class=&quot;hljs-string&quot;&gt;&quot;%{[@metadata][type]}&quot;&lt;/span&gt;
+    &lt;span class=&quot;hljs-keyword&quot;&gt;template&lt;/span&gt; =&amp;gt; &lt;span class=&quot;hljs-string&quot;&gt;&quot;/etc/filebeat/vertx_app_filebeat.json&quot;&lt;/span&gt;
+    template_overwrite =&amp;gt; &lt;span class=&quot;hljs-literal&quot;&gt;true&lt;/span&gt;
+  }
+}&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;elasticsearch&quot;&gt;Elasticsearch&lt;/h3&gt;
+&lt;p&gt;Elasticsearch is the central component that enables the efficient indexing and real-time search capabilities of the stack. To take the most advantage of Elasticsearch, we can provide an indexing template of our incoming logs, which can help to optimize the data storage and match the queries issued by Kibana at a later point.&lt;br /&gt;In the example below, we see an index template that would be applied to any index matching the pattern &lt;code&gt;filebeat-*&lt;/code&gt;. Additionally, we declare our new log fields &lt;code&gt;type&lt;/code&gt;, &lt;code&gt;host&lt;/code&gt;, &lt;code&gt;log_level&lt;/code&gt;, &lt;code&gt;logger_name&lt;/code&gt;, and &lt;code&gt;log_message&lt;/code&gt;, which are set as &lt;code&gt;not_analyzed&lt;/code&gt; except for the last two that are set as &lt;code&gt;analyzed&lt;/code&gt; allowing to perform queries based on regular expressions and not restricted to query the full text.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;hljs json&quot;&gt;{
+  &quot;&lt;span class=&quot;hljs-attribute&quot;&gt;mappings&lt;/span&gt;&quot;: &lt;span class=&quot;hljs-value&quot;&gt;{
+    &quot;&lt;span class=&quot;hljs-attribute&quot;&gt;_default_&lt;/span&gt;&quot;: &lt;span class=&quot;hljs-value&quot;&gt;{
+      &quot;&lt;span class=&quot;hljs-attribute&quot;&gt;_all&lt;/span&gt;&quot;: &lt;span class=&quot;hljs-value&quot;&gt;{
+        &quot;&lt;span class=&quot;hljs-attribute&quot;&gt;enabled&lt;/span&gt;&quot;: &lt;span class=&quot;hljs-value&quot;&gt;&lt;span class=&quot;hljs-literal&quot;&gt;true&lt;/span&gt;&lt;/span&gt;,
+        &quot;&lt;span class=&quot;hljs-attribute&quot;&gt;norms&lt;/span&gt;&quot;: &lt;span class=&quot;hljs-value&quot;&gt;{
+          &quot;&lt;span class=&quot;hljs-attribute&quot;&gt;enabled&lt;/span&gt;&quot;: &lt;span class=&quot;hljs-value&quot;&gt;&lt;span class=&quot;hljs-literal&quot;&gt;false&lt;/span&gt;
+        &lt;/span&gt;}
+      &lt;/span&gt;}&lt;/span&gt;,
+      &quot;&lt;span class=&quot;hljs-attribute&quot;&gt;dynamic_templates&lt;/span&gt;&quot;: &lt;span class=&quot;hljs-value&quot;&gt;[
+        {
+          &quot;&lt;span class=&quot;hljs-attribute&quot;&gt;template1&lt;/span&gt;&quot;: &lt;span class=&quot;hljs-value&quot;&gt;{
+            &quot;&lt;span class=&quot;hljs-attribute&quot;&gt;mapping&lt;/span&gt;&quot;: &lt;span class=&quot;hljs-value&quot;&gt;{
+              &quot;&lt;span class=&quot;hljs-attribute&quot;&gt;doc_values&lt;/span&gt;&quot;: &lt;span class=&quot;hljs-value&quot;&gt;&lt;span class=&quot;hljs-literal&quot;&gt;true&lt;/span&gt;&lt;/span&gt;,
+              &quot;&lt;span class=&quot;hljs-attribute&quot;&gt;ignore_above&lt;/span&gt;&quot;: &lt;span class=&quot;hljs-value&quot;&gt;&lt;span class=&quot;hljs-number&quot;&gt;1024&lt;/span&gt;&lt;/span&gt;,
+              &quot;&lt;span class=&quot;hljs-attribute&quot;&gt;index&lt;/span&gt;&quot;: &lt;span class=&quot;hljs-value&quot;&gt;&lt;span class=&quot;hljs-string&quot;&gt;&quot;not_analyzed&quot;&lt;/span&gt;&lt;/span&gt;,
+              &quot;&lt;span class=&quot;hljs-attribute&quot;&gt;type&lt;/span&gt;&quot;: &lt;span class=&quot;hljs-value&quot;&gt;&lt;span class=&quot;hljs-string&quot;&gt;&quot;{dynamic_type}&quot;&lt;/span&gt;
+            &lt;/span&gt;}&lt;/span&gt;,
+            &quot;&lt;span class=&quot;hljs-attribute&quot;&gt;match&lt;/span&gt;&quot;: &lt;span class=&quot;hljs-value&quot;&gt;&lt;span class=&quot;hljs-string&quot;&gt;&quot;*&quot;&lt;/span&gt;
+          &lt;/span&gt;}
+        &lt;/span&gt;}
+      ]&lt;/span&gt;,
+      &quot;&lt;span class=&quot;hljs-attribute&quot;&gt;properties&lt;/span&gt;&quot;: &lt;span class=&quot;hljs-value&quot;&gt;{
+        &quot;&lt;span class=&quot;hljs-attribute&quot;&gt;@timestamp&lt;/span&gt;&quot;: &lt;span class=&quot;hljs-value&quot;&gt;{
+          &quot;&lt;span class=&quot;hljs-attribute&quot;&gt;type&lt;/span&gt;&quot;: &lt;span class=&quot;hljs-value&quot;&gt;&lt;span class=&quot;hljs-string&quot;&gt;&quot;date&quot;&lt;/span&gt;
+        &lt;/span&gt;}&lt;/span&gt;,
+        &quot;&lt;span class=&quot;hljs-attribute&quot;&gt;offset&lt;/span&gt;&quot;: &lt;span class=&quot;hljs-value&quot;&gt;{
+          &quot;&lt;span class=&quot;hljs-attribute&quot;&gt;type&lt;/span&gt;&quot;: &lt;span class=&quot;hljs-value&quot;&gt;&lt;span class=&quot;hljs-string&quot;&gt;&quot;long&quot;&lt;/span&gt;&lt;/span&gt;,
+          &quot;&lt;span class=&quot;hljs-attribute&quot;&gt;doc_values&lt;/span&gt;&quot;: &lt;span class=&quot;hljs-value&quot;&gt;&lt;span class=&quot;hljs-string&quot;&gt;&quot;true&quot;&lt;/span&gt;
+        &lt;/span&gt;}&lt;/span&gt;,
+        &quot;&lt;span class=&quot;hljs-attribute&quot;&gt;type&lt;/span&gt;&quot;: &lt;span class=&quot;hljs-value&quot;&gt;{ &quot;&lt;span class=&quot;hljs-attribute&quot;&gt;type&lt;/span&gt;&quot;: &lt;span class=&quot;hljs-value&quot;&gt;&lt;span class=&quot;hljs-string&quot;&gt;&quot;string&quot;&lt;/span&gt;&lt;/span&gt;, &quot;&lt;span class=&quot;hljs-attribute&quot;&gt;index&lt;/span&gt;&quot;: &lt;span class=&quot;hljs-value&quot;&gt;&lt;span class=&quot;hljs-string&quot;&gt;&quot;not_analyzed&quot;&lt;/span&gt; &lt;/span&gt;}&lt;/span&gt;,
+        &quot;&lt;span class=&quot;hljs-attribute&quot;&gt;host&lt;/span&gt;&quot;: &lt;span class=&quot;hljs-value&quot;&gt;{ &quot;&lt;span class=&quot;hljs-attribute&quot;&gt;type&lt;/span&gt;&quot;: &lt;span class=&quot;hljs-value&quot;&gt;&lt;span class=&quot;hljs-string&quot;&gt;&quot;string&quot;&lt;/span&gt;&lt;/span&gt;, &quot;&lt;span class=&quot;hljs-attribute&quot;&gt;index&lt;/span&gt;&quot;: &lt;span class=&quot;hljs-value&quot;&gt;&lt;span class=&quot;hljs-string&quot;&gt;&quot;not_analyzed&quot;&lt;/span&gt; &lt;/span&gt;}&lt;/span&gt;,
+        &quot;&lt;span class=&quot;hljs-attribute&quot;&gt;log_level&lt;/span&gt;&quot;: &lt;span class=&quot;hljs-value&quot;&gt;{ &quot;&lt;span class=&quot;hljs-attribute&quot;&gt;type&lt;/span&gt;&quot;: &lt;span class=&quot;hljs-value&quot;&gt;&lt;span class=&quot;hljs-string&quot;&gt;&quot;string&quot;&lt;/span&gt;&lt;/span&gt;, &quot;&lt;span class=&quot;hljs-attribute&quot;&gt;index&lt;/span&gt;&quot;: &lt;span class=&quot;hljs-value&quot;&gt;&lt;span class=&quot;hljs-string&quot;&gt;&quot;not_analyzed&quot;&lt;/span&gt; &lt;/span&gt;}&lt;/span&gt;,
+        &quot;&lt;span class=&quot;hljs-attribute&quot;&gt;logger_name&lt;/span&gt;&quot;: &lt;span class=&quot;hljs-value&quot;&gt;{ &quot;&lt;span class=&quot;hljs-attribute&quot;&gt;type&lt;/span&gt;&quot;: &lt;span class=&quot;hljs-value&quot;&gt;&lt;span class=&quot;hljs-string&quot;&gt;&quot;string&quot;&lt;/span&gt;&lt;/span&gt;, &quot;&lt;span class=&quot;hljs-attribute&quot;&gt;index&lt;/span&gt;&quot;: &lt;span class=&quot;hljs-value&quot;&gt;&lt;span class=&quot;hljs-string&quot;&gt;&quot;analyzed&quot;&lt;/span&gt; &lt;/span&gt;}&lt;/span&gt;,
+        &quot;&lt;span class=&quot;hljs-attribute&quot;&gt;log_message&lt;/span&gt;&quot;: &lt;span class=&quot;hljs-value&quot;&gt;{ &quot;&lt;span class=&quot;hljs-attribute&quot;&gt;type&lt;/span&gt;&quot;: &lt;span class=&quot;hljs-value&quot;&gt;&lt;span class=&quot;hljs-string&quot;&gt;&quot;string&quot;&lt;/span&gt;&lt;/span&gt;, &quot;&lt;span class=&quot;hljs-attribute&quot;&gt;index&lt;/span&gt;&quot;: &lt;span class=&quot;hljs-value&quot;&gt;&lt;span class=&quot;hljs-string&quot;&gt;&quot;analyzed&quot;&lt;/span&gt; &lt;/span&gt;}
+      &lt;/span&gt;}
+    &lt;/span&gt;}
+  &lt;/span&gt;}&lt;/span&gt;,
+  &quot;&lt;span class=&quot;hljs-attribute&quot;&gt;settings&lt;/span&gt;&quot;: &lt;span class=&quot;hljs-value&quot;&gt;{
+    &quot;&lt;span class=&quot;hljs-attribute&quot;&gt;index.refresh_interval&lt;/span&gt;&quot;: &lt;span class=&quot;hljs-value&quot;&gt;&lt;span class=&quot;hljs-string&quot;&gt;&quot;5s&quot;&lt;/span&gt;
+  &lt;/span&gt;}&lt;/span&gt;,
+  &quot;&lt;span class=&quot;hljs-attribute&quot;&gt;template&lt;/span&gt;&quot;: &lt;span class=&quot;hljs-value&quot;&gt;&lt;span class=&quot;hljs-string&quot;&gt;&quot;filebeat-*&quot;&lt;/span&gt;
+&lt;/span&gt;}&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;kibana&quot;&gt;Kibana&lt;/h3&gt;
+&lt;p&gt;Although we could fetch all our logs from Elasticsearch through its API, Kibana is a powerful tool that allows a more friendly query and visualization.
+Besides the option to query our data through the available indexed field names and search boxes allowing typing specific queries, Kibana allows creating our own &lt;em&gt;Visualizations&lt;/em&gt; and &lt;em&gt;Dashboards&lt;/em&gt;. Combined, they represent a powerful way to display data and gain insight in a customized manner.
+The accompanied demo ships with a couple of sample dashboards and visualizations that take advantage of the log fields that we specified in our index template and throw valuable insight. This includes: visualizing the number of log messages received by ELK, observe the proportion of messages that each log source produces, and directly find out the sources of error logs.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&quot;Kibana Dashboard&quot; src=&quot;http://vertx.io/assets/blog/centralized-logging-using-elk/kibana-dashboard.png&quot; style=&quot;width: 70%; display: block; margin: auto;&quot; /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;log-shipping-challenge&quot;&gt;Log shipping challenge&lt;/h2&gt;
+&lt;p&gt;The solution presented here relied on Filebeat to ship log data to Logstash. However, if you are familiar with the Log4j framework you may be aware that there exists a &lt;em&gt;SocketAppender&lt;/em&gt; that allows to write log events directly to a remote server using a TCP connection. Although including the Filebeat + Logstash combination  may sound an unnecessary overhead to the logging pipeline, they provide a number of benefits in comparison to the Log4j socket alternative:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The SocketAppender relies on the specific serialization of Log4j’s &lt;em&gt;LogEvent&lt;/em&gt; objects, which is no an interchangeable format as JSON, which is used by the Beats solution. Although there are &lt;a href=&quot;https://github.com/majikthys/log4j2-logstash-jsonevent-layout&quot;&gt;attempts&lt;/a&gt; to output the logs in a JSON format for Logstash, it doesn’t support multiline logs, which results in messages being split into different events by Logstash. On the other hand, there is no official nor stable &lt;a href=&quot;https://www.elastic.co/guide/en/logstash/current/input-plugins.html&quot;&gt;input plugin&lt;/a&gt; for Log4j version 2.&lt;/li&gt;
+&lt;li&gt;While enabling Log4j’s async logging mode in an application delegates logging operations to separate threads, given their coexistence in the same JVM there is still the risk of data loss in case of a sudden JVM termination without proper log channel closing.&lt;/li&gt;
+&lt;li&gt;Filebeat is a data shipper designed to deal with many constraints that arise in distributed environments in a reliable manner, therefore it provides options to tailor and scale this operation to our needs: the possibility to load balance between multiple Logstash instances, specify the number of simultaneous Filebeat workers that ship log files, and specify a compression level in order to reduce the consumed bandwidth. Besides that, logs can be shipped in specific batch sizes, with maximum amount of retries, and specifying a connection timeout.&lt;/li&gt;
+&lt;li&gt;Lastly, although Filebeat can forward logs directly to Elasticsearch, using Logstash as an intermediary offers the possibility to collect logs from diverse sources (e.g., system metrics).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;demo&quot;&gt;Demo&lt;/h2&gt;
+&lt;p&gt;This post is accompanied by a demo based on the Vert.x Microservices &lt;a href=&quot;http://vertx-lab.dynamis-technologies.com/&quot;&gt;workshop&lt;/a&gt;, where each of them is shipped in a Docker container simulating a distributed system composed of independent addressable nodes.&lt;br /&gt;Also, the ELK stack is provisioned using a preconfigured Docker image by &lt;a href=&quot;https://github.com/spujadas&quot;&gt;Sébastien Pujadas&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Following the guidelines in this post, this demo configures each of the Microservices of the workshop, sets up a Filebeat process on each of them to ship the logs to a central container hosting the ELK stack.&lt;/p&gt;
+&lt;h3 id=&quot;installation&quot;&gt;Installation&lt;/h3&gt;
+&lt;p&gt;In order to run this demo, it is necessary to have Docker installed, then proceed with:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Cloning or downloading the demo &lt;a href=&quot;https://github.com/ricardohmon/vertx-elk&quot;&gt;repository&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Separately, obtaining the source code of the &lt;a href=&quot;https://github.com/ricardohmon/vertx-microservices-workshop/tree/elk-demo&quot;&gt;branch&lt;/a&gt; of the Microservices workshop adapted for this demo.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;building-the-example&quot;&gt;Building the example&lt;/h3&gt;
+&lt;p&gt;The Docker images belonging to the Vert.x Microservices workshop need to be built separately to this project before this project can be launched.&lt;/p&gt;
+&lt;h3 id=&quot;building-the-vert-x-microservices-workshop-docker-images-&quot;&gt;Building the Vert.x Microservices workshop Docker images.&lt;/h3&gt;
+&lt;p&gt;Build the &lt;em&gt;root&lt;/em&gt; project and the &lt;em&gt;Trader Dashboard&lt;/em&gt; followed by each of the modules contained in the solution folder. Issue the following commands for this:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;hljs&quot;&gt;mvn clean install
+cd trader-dashboard
+mvn &lt;span class=&quot;hljs-keyword&quot;&gt;package&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;docker:&lt;/span&gt;build
+cd ..&lt;span class=&quot;hljs-regexp&quot;&gt;/solution/&lt;/span&gt;audit-service
+mvn &lt;span class=&quot;hljs-keyword&quot;&gt;package&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;docker:&lt;/span&gt;build
+cd ../compulsive-traders
+mvn &lt;span class=&quot;hljs-keyword&quot;&gt;package&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;docker:&lt;/span&gt;build
+cd ../portfolio-service
+mvn &lt;span class=&quot;hljs-keyword&quot;&gt;package&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;docker:&lt;/span&gt;build
+cd ..&lt;span class=&quot;hljs-regexp&quot;&gt;/quote-generator/&lt;/span&gt;
+mvn &lt;span class=&quot;hljs-keyword&quot;&gt;package&lt;/span&gt; &lt;span class=&quot;hljs-string&quot;&gt;docker:&lt;/span&gt;build&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;running-the-example&quot;&gt;Running the example&lt;/h3&gt;
+&lt;p&gt;After building the previous images, build and run the example in &lt;code&gt;vertx-elk&lt;/code&gt; using the following command:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;hljs&quot;&gt;docker-compose &lt;span class=&quot;hljs-keyword&quot;&gt;up&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;the-demo&quot;&gt;The demo&lt;/h3&gt;
+&lt;p&gt;You can watch the demo in action in the following screencast:&lt;/p&gt;
+&lt;div class=&quot;embed-responsive embed-responsive-16by9&quot;&gt;
+
+&lt;/div&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;The ELK stack is a powerful set of tools that ease the aggregation of logs coming from distributed services into a central server. Its main pillar, Elasticsearch, provides the indexing and search capabilities of our log data. Also, it is accompanied by the convenient input/output components: Logstash, which can be flexibly configured to accept different data sources; and Kibana, which can be customized to present the information in the most convenient way.&lt;/p&gt;
+&lt;p&gt;Logstash has been designed to work seamlessly with Filebeat, the log shipper which represents a robust solution that can be adapted to our applications without having to make &lt;em&gt;significant&lt;/em&gt; changes to our architecture. In addition, Logstash can accept varied types of sources, filter the data, and process it before delivering to Elasticsearch. This flexibility comes with the price of having extra elements in our log aggregation pipeline, which can represent an increase of processing overhead or a point-of-failure. This additional overhead could be avoided if an application would be capable of delivering its log output directly to Elasticsearch.&lt;/p&gt;
+&lt;p&gt;Happy logging!&lt;/p&gt;
+&lt;/article&gt;</description>
+	<pubDate>Thu, 08 Sep 2016 00:00:00 +0000</pubDate>
+</item>
+<item>
+	<title>Scott Lewis: ECF 3.13.2</title>
+	<guid isPermaLink="false">tag:blogger.com,1999:blog-20358640.post-7885106559529683032</guid>
+	<link>http://eclipseecf.blogspot.com/2016/09/ecf-3122.html</link>
+	<description>&lt;a href=&quot;https://www.eclipse.org/ecf/&quot; target=&quot;_blank&quot;&gt;ECF&lt;/a&gt; 3.13.2 is now &lt;a href=&quot;https://www.eclipse.org/ecf/downloads.php&quot; target=&quot;_blank&quot;&gt;available&lt;/a&gt;. &lt;br /&gt;&lt;br /&gt;This is a maintenance/bug fix release, but includes new documentation on growing set of &lt;a href=&quot;https://wiki.eclipse.org/Distribution_Providers&quot; target=&quot;_blank&quot;&gt;ECF distribution providers&lt;/a&gt; to support our implementation of &lt;a href=&quot;https://wiki.eclipse.org/Eclipse_Communication_Framework_Project#OSGi_Remote_Services&quot; target=&quot;_blank&quot;&gt;OSGi Remote Services&lt;/a&gt;. &lt;br /&gt;&lt;br /&gt;New and Noteworthy &lt;a href=&quot;https://www.eclipse.org/ecf/NewAndNoteworthy.html&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt;.&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;</description>
+	<pubDate>Mon, 05 Sep 2016 19:16:44 +0000</pubDate>
+	<author>noreply@blogger.com (Scott Lewis)</author>
+</item>
+<item>
+	<title>Mikael Barbero: Back to school update on FEEP</title>
+	<guid isPermaLink="true">https://mikael-barbero.tumblr.com/post/149788108430</guid>
+	<link>https://mikael-barbero.tumblr.com/post/149788108430</link>
+	<description>&lt;p&gt;You &lt;a href=&quot;https://mikael-barbero.tumblr.com/post/145308146515/its-feep-ing-time&quot;&gt;remember&lt;/a&gt; the Friends of Eclipse Enhancement Program, right? It is a program that utilizes all the donations made through the Friends of Eclipse program to make significant and meaningful improvements and enhancements to the Eclipse IDE/Platform. I think it is a good time for me to provide you with an &lt;b&gt;update about what we have done in the last quarter with this program&lt;/b&gt;. &lt;/p&gt;&lt;p&gt;One of the major effort we have been focused on is the &lt;b&gt;triage of the key Eclipse Platform UI bugs&lt;/b&gt;. The &lt;a href=&quot;https://projects.eclipse.org/development_effort/triagefix-key-platformui-errors&quot;&gt;bid&lt;/a&gt; has been awarded to &lt;a href=&quot;http://www.asegno.com&quot;&gt;Patrik Suzzi&lt;/a&gt; and I must say that the Eclipse Platform team and the Eclipse Foundation have been delighted to work with Patrik. Since the beginning of April, he has &lt;b&gt;triaged about &lt;a href=&quot;https://bugs.eclipse.org/bugs/buglist.cgi?cmdtype=dorem&amp;amp;namedcmd=Platform%20TRG&amp;amp;remaction=run&amp;amp;sharer_id=78132&amp;amp;list_id=14981663&quot;&gt;400 bugs&lt;/a&gt; and &lt;a href=&quot;https://bugs.eclipse.org/bugs/buglist.cgi?cmdtype=dorem&amp;amp;list_id=14981664&amp;amp;namedcmd=Platform%20FIX&amp;amp;remaction=run&amp;amp;sharer_id=78132&quot;&gt;fixed&lt;/a&gt; or &lt;a href=&quot;https://bugs.eclipse.org/bugs/buglist.cgi?cmdtype=dorem&amp;amp;list_id=14981665&amp;amp;namedcmd=Platform%20REV-CON&amp;amp;remaction=run&amp;amp;sharer_id=78132&quot;&gt;contributed&lt;/a&gt; to fix 70 bugs in the Platform&lt;/b&gt;. It granted him to become an Eclipse Platform UI committer. Congratulation! &lt;/p&gt;&lt;p&gt;Among others, Patrik has fixed some very annoying bugs like the &lt;a href=&quot;https://bugs.eclipse.org/bugs/show_bug.cgi?id=497348&quot;&gt;broken feedback on drag and drop of overflown tabs editor&lt;/a&gt; or the inclusion of an &lt;a href=&quot;https://bugs.eclipse.org/bugs/show_bug.cgi?id=459989&quot;&gt;Eclipse help search in the quick access field&lt;/a&gt;. By the way, if you don’t know what quick access is, I urge you to &lt;a href=&quot;https://waynebeaton.wordpress.com/2016/04/06/quick-access-to-eclipse-ide-features/&quot;&gt;have a look at it&lt;/a&gt;.&lt;/p&gt;&lt;figure class=&quot;tmblr-full&quot;&gt;&lt;img alt=&quot;image&quot; src=&quot;https://67.media.tumblr.com/7d59d680e9c9af386da39221b3fa6b2f/tumblr_inline_octssaD9pT1tnayhr_540.png&quot; /&gt;&lt;/figure&gt;&lt;p&gt;Another area I’ve been working on is the &lt;a href=&quot;https://bugs.eclipse.org/bugs/show_bug.cgi?id=500332&quot;&gt;&lt;b&gt;progress monitor performance&lt;/b&gt;&lt;/a&gt;. When projects would do heavy progress reporting, the reporting itself was slowing down the running task by a huge factor. Have a look at how &lt;a href=&quot;https://bugs.eclipse.org/bugs/attachment.cgi?id=263879&quot;&gt;it now runs faster and smoother now.&lt;/a&gt;&lt;/p&gt;&lt;figure class=&quot;tmblr-full&quot;&gt;&lt;a href=&quot;https://bugs.eclipse.org/bugs/attachment.cgi?id=263879&quot;&gt;&lt;img alt=&quot;image&quot; src=&quot;https://67.media.tumblr.com/b70f5ddcf1b43886593f82c9da9d9a6d/tumblr_inline_octt11vH241tnayhr_540.png&quot; /&gt;&lt;/a&gt;&lt;/figure&gt;&lt;p&gt;&lt;a href=&quot;https://projects.eclipse.org/development-efforts&quot;&gt;Many more fixes and improvements can be done to the Eclipse IDE/Platform with this program&lt;/a&gt;. Obviously, the development depends on the amount of donations received. You can help improve the Eclipse Platform and make a difference. You only need to &lt;b&gt;&lt;a href=&quot;https://www.eclipse.org/donate/&quot;&gt;donate today&lt;/a&gt;!&lt;/b&gt;&lt;/p&gt;</description>
+	<pubDate>Mon, 05 Sep 2016 10:00:00 +0000</pubDate>
+</item>
+<item>
+	<title>Lorenzo Bettini: The second edition of the Xtext book has been published</title>
+	<guid isPermaLink="false">http://www.lorenzobettini.it/?p=891</guid>
+	<link>http://www.lorenzobettini.it/2016/09/the-second-edition-of-the-xtext-book-has-been-published/</link>
+	<description>&lt;p&gt;The &lt;strong&gt;second edition&lt;/strong&gt; of the Xtext book, &lt;strong&gt;Implementing Domain-Specific Languages with Xtext and Xtend&lt;/strong&gt;, was published at the end of August: &lt;a href=&quot;https://www.packtpub.com/web-development/implementing-domain-specific-languages-xtext-and-xtend-second-edition&quot; target=&quot;_blank&quot;&gt;https://www.packtpub.com/web-development/implementing-domain-specific-languages-xtext-and-xtend-second-edition&lt;/a&gt;. So… get it while it’s hot &lt;img alt=&quot;🙂&quot; class=&quot;wp-smiley&quot; src=&quot;https://s.w.org/images/core/emoji/2/72x72/1f642.png&quot; style=&quot;height: 1em;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.lorenzobettini.it/2016/07/the-second-edition-of-the-xtext-book-has-been-published/4965os_5541_implementing-domain-specific-languages-with-xtext-and-xtend-second-edition/&quot; rel=&quot;attachment wp-att-893&quot;&gt;&lt;img alt=&quot;4965OS_5541_Implementing Domain Specific Languages with Xtext and Xtend - Second Edition&quot; class=&quot;aligncenter size-full wp-image-893&quot; height=&quot;617&quot; src=&quot;http://www.lorenzobettini.it/wp-content/uploads/2016/07/4965OS_5541_Implementing-Domain-Specific-Languages-with-Xtext-and-Xtend-Second-Edition.jpg&quot; width=&quot;500&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Please, see&lt;a href=&quot;http://www.lorenzobettini.it/2016/07/the-forthcoming-second-edition-of-the-xtext-book/&quot; target=&quot;_blank&quot;&gt; my previous post&lt;/a&gt; for details about the novelties in this edition.&lt;/p&gt;
+&lt;p&gt;Sources of the examples are on github: &lt;a href=&quot;https://github.com/LorenzoBettini/packtpub-xtext-book-2nd-examples&quot; target=&quot;_blank&quot;&gt;https://github.com/LorenzoBettini/packtpub-xtext-book-2nd-examples&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Hope you’ll enjoy the book!&lt;/p&gt;
+&lt;div class=&quot;sociable&quot;&gt;&lt;div class=&quot;sociable_tagline&quot;&gt;Be Sociable, Share!&lt;/div&gt;&lt;ul class=&quot;clearfix&quot;&gt;&lt;li&gt;&lt;a class=&quot;option1_16&quot; href=&quot;http://twitter.com/intent/tweet?text=The%20second%20edition%20of%20the%20Xtext%20book%20has%20been%20published%20-%20http%3A%2F%2Fwww.lorenzobettini.it%2F2016%2F09%2Fthe-second-edition-of-the-xtext-book-has-been-published%2F%20&quot; rel=&quot;nofollow&quot; target=&quot;_blank&quot; title=&quot;Twitter&quot;&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a class=&quot;option1_16&quot; href=&quot;http://www.facebook.com/share.php?u=http%3A%2F%2Fwww.lorenzobettini.it%2F2016%2F09%2Fthe-second-edition-of-the-xtext-book-has-been-published%2F&amp;amp;t=The%20second%20edition%20of%20the%20Xtext%20book%20has%20been%20published&quot; rel=&quot;nofollow&quot; target=&quot;_blank&quot; title=&quot;Facebook&quot;&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a class=&quot;option1_16&quot; href=&quot;https://mail.google.com/mail/?view=cm&amp;amp;fs=1&amp;amp;to&amp;amp;su=The%20second%20edition%20of%20the%20Xtext%20book%20has%20been%20published&amp;amp;body=http%3A%2F%2Fwww.lorenzobettini.it%2F2016%2F09%2Fthe-second-edition-of-the-xtext-book-has-been-published%2F&amp;amp;ui=2&amp;amp;tf=1&amp;amp;shva=1&quot; rel=&quot;nofollow&quot; target=&quot;_blank&quot; title=&quot;email&quot;&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a class=&quot;option1_16&quot; rel=&quot;nofollow&quot; title=&quot;Add to favorites - doesn't work in Chrome&quot;&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a class=&quot;option1_16&quot; href=&quot;http://www.stumbleupon.com/submit?url=http%3A%2F%2Fwww.lorenzobettini.it%2F2016%2F09%2Fthe-second-edition-of-the-xtext-book-has-been-published%2F&amp;amp;title=The%20second%20edition%20of%20the%20Xtext%20book%20has%20been%20published&quot; rel=&quot;nofollow&quot; target=&quot;_blank&quot; title=&quot;StumbleUpon&quot;&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a class=&quot;option1_16&quot; href=&quot;http://delicious.com/post?url=http%3A%2F%2Fwww.lorenzobettini.it%2F2016%2F09%2Fthe-second-edition-of-the-xtext-book-has-been-published%2F&amp;amp;title=The%20second%20edition%20of%20the%20Xtext%20book%20has%20been%20published&amp;amp;notes=The%20second%20edition%20of%20the%20Xtext%20book%2C%20Implementing%20Domain-Specific%20Languages%20with%20Xtext%20and%20Xtend%2C%20was%C2%A0published%C2%A0at%20the%20end%20of%20August%3A%C2%A0https%3A%2F%2Fwww.packtpub.com%2Fweb-development%2Fimplementing-domain-specific-languages-xtext-and-xtend-second-edition.%20&quot; rel=&quot;nofollow&quot; target=&quot;_blank&quot; title=&quot;Delicious&quot;&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a class=&quot;option1_16&quot; href=&quot;http://www.google.com/reader/link?url=http%3A%2F%2Fwww.lorenzobettini.it%2F2016%2F09%2Fthe-second-edition-of-the-xtext-book-has-been-published%2F&amp;amp;title=The%20second%20edition%20of%20the%20Xtext%20book%20has%20been%20published&amp;amp;srcURL=http%3A%2F%2Fwww.lorenzobettini.it%2F2016%2F09%2Fthe-second-edition-of-the-xtext-book-has-been-published%2F&amp;amp;srcTitle=Lorenzo+Bettini+My+Home+Page&quot; rel=&quot;nofollow&quot; target=&quot;_blank&quot; title=&quot;Google Reader&quot;&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a class=&quot;option1_16&quot; href=&quot;http://www.linkedin.com/shareArticle?mini=true&amp;amp;url=http%3A%2F%2Fwww.lorenzobettini.it%2F2016%2F09%2Fthe-second-edition-of-the-xtext-book-has-been-published%2F&amp;amp;title=The%20second%20edition%20of%20the%20Xtext%20book%20has%20been%20published&amp;amp;source=Lorenzo+Bettini+My+Home+Page&amp;amp;summary=The%20second%20edition%20of%20the%20Xtext%20book%2C%20Implementing%20Domain-Specific%20Languages%20with%20Xtext%20and%20Xtend%2C%20was%C2%A0published%C2%A0at%20the%20end%20of%20August%3A%C2%A0https%3A%2F%2Fwww.packtpub.com%2Fweb-development%2Fimplementing-domain-specific-languages-xtext-and-xtend-second-edition.%20&quot; rel=&quot;nofollow&quot; target=&quot;_blank&quot; title=&quot;LinkedIn&quot;&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a class=&quot;option1_16&quot; href=&quot;http://www.blinklist.com/index.php?Action=Blink/addblink.php&amp;amp;Url=http%3A%2F%2Fwww.lorenzobettini.it%2F2016%2F09%2Fthe-second-edition-of-the-xtext-book-has-been-published%2F&amp;amp;Title=The%20second%20edition%20of%20the%20Xtext%20book%20has%20been%20published&quot; rel=&quot;nofollow&quot; style=&quot;background-position: 0px 0px;&quot; target=&quot;_blank&quot; title=&quot;BlinkList&quot;&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a rel=&quot;nofollow&quot; style=&quot;cursor: pointer;&quot;&gt;&lt;img src=&quot;http://www.lorenzobettini.it/wp-content/plugins/sociable/images/more.png&quot; /&gt;&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;div id=&quot;sociable-post-891&quot; style=&quot;display: none;&quot;&gt;   
+
+    &lt;div id=&quot;sociable&quot; style=&quot;display: block;&quot;&gt;
+
+
+
+		&lt;div class=&quot;popup&quot;&gt;
+
+			&lt;div class=&quot;content&quot;&gt;
+
+				&lt;ul&gt;&lt;li style=&quot;width: 16px;&quot;&gt;&lt;a class=&quot;option1_16&quot; href=&quot;http://www.myspace.com/Modules/PostTo/Pages/?u=http%3A%2F%2Fwww.lorenzobettini.it%2F2016%2F09%2Fthe-second-edition-of-the-xtext-book-has-been-published%2F&amp;amp;t=The%20second%20edition%20of%20the%20Xtext%20book%20has%20been%20published&quot; rel=&quot;nofollow&quot; target=&quot;_blank&quot; title=&quot;Myspace&quot;&gt;&lt;/a&gt;&lt;/li&gt;&lt;li style=&quot;width: 16px;&quot;&gt;&lt;a class=&quot;option1_16&quot; href=&quot;http://digg.com/submit?phase=2&amp;amp;url=http%3A%2F%2Fwww.lorenzobettini.it%2F2016%2F09%2Fthe-second-edition-of-the-xtext-book-has-been-published%2F&amp;amp;title=The%20second%20edition%20of%20the%20Xtext%20book%20has%20been%20published&amp;amp;bodytext=The%20second%20edition%20of%20the%20Xtext%20book%2C%20Implementing%20Domain-Specific%20Languages%20with%20Xtext%20and%20Xtend%2C%20was%C2%A0published%C2%A0at%20the%20end%20of%20August%3A%C2%A0https%3A%2F%2Fwww.packtpub.com%2Fweb-development%2Fimplementing-domain-specific-languages-xtext-and-xtend-second-edition.%20&quot; rel=&quot;nofollow&quot; target=&quot;_blank&quot; title=&quot;Digg&quot;&gt;&lt;/a&gt;&lt;/li&gt;&lt;li style=&quot;width: 16px;&quot;&gt;&lt;a class=&quot;option1_16&quot; href=&quot;http://reddit.com/submit?url=http%3A%2F%2Fwww.lorenzobettini.it%2F2016%2F09%2Fthe-second-edition-of-the-xtext-book-has-been-published%2F&amp;amp;title=The%20second%20edition%20of%20the%20Xtext%20book%20has%20been%20published&quot; rel=&quot;nofollow&quot; target=&quot;_blank&quot; title=&quot;Reddit&quot;&gt;&lt;/a&gt;&lt;/li&gt;&lt;li style=&quot;width: 16px;&quot;&gt;&lt;a class=&quot;option1_16&quot; href=&quot;http://www.google.com/bookmarks/mark?op=edit&amp;amp;bkmk=http%3A%2F%2Fwww.lorenzobettini.it%2F2016%2F09%2Fthe-second-edition-of-the-xtext-book-has-been-published%2F&amp;amp;title=The%20second%20edition%20of%20the%20Xtext%20book%20has%20been%20published&amp;amp;annotation=The%20second%20edition%20of%20the%20Xtext%20book%2C%20Implementing%20Domain-Specific%20Languages%20with%20Xtext%20and%20Xtend%2C%20was%C2%A0published%C2%A0at%20the%20end%20of%20August%3A%C2%A0https%3A%2F%2Fwww.packtpub.com%2Fweb-development%2Fimplementing-domain-specific-languages-xtext-and-xtend-second-edition.%20&quot; rel=&quot;nofollow&quot; target=&quot;_blank&quot; title=&quot;Google Bookmarks&quot;&gt;&lt;/a&gt;&lt;/li&gt;&lt;li style=&quot;width: 16px;&quot;&gt;&lt;a class=&quot;option1_16&quot; href=&quot;http://news.ycombinator.com/submitlink?u=http%3A%2F%2Fwww.lorenzobettini.it%2F2016%2F09%2Fthe-second-edition-of-the-xtext-book-has-been-published%2F&amp;amp;t=The%20second%20edition%20of%20the%20Xtext%20book%20has%20been%20published&quot; rel=&quot;nofollow&quot; target=&quot;_blank&quot; title=&quot;HackerNews&quot;&gt;&lt;/a&gt;&lt;/li&gt;&lt;li style=&quot;width: 16px;&quot;&gt;&lt;a class=&quot;option1_16&quot; href=&quot;http://reporter.es.msn.com/?fn=contribute&amp;amp;Title=The%20second%20edition%20of%20the%20Xtext%20book%20has%20been%20published&amp;amp;URL=http%3A%2F%2Fwww.lorenzobettini.it%2F2016%2F09%2Fthe-second-edition-of-the-xtext-book-has-been-published%2F&amp;amp;cat_id=6&amp;amp;tag_id=31&amp;amp;Remark=The%20second%20edition%20of%20the%20Xtext%20book%2C%20Implementing%20Domain-Specific%20Languages%20with%20Xtext%20and%20Xtend%2C%20was%C2%A0published%C2%A0at%20the%20end%20of%20August%3A%C2%A0https%3A%2F%2Fwww.packtpub.com%2Fweb-development%2Fimplementing-domain-specific-languages-xtext-and-xtend-second-edition.%20&quot; rel=&quot;nofollow&quot; target=&quot;_blank&quot; title=&quot;MSNReporter&quot;&gt;&lt;/a&gt;&lt;/li&gt;&lt;li style=&quot;width: 16px;&quot;&gt;&lt;a class=&quot;option1_16&quot; href=&quot;http://sphinn.com/index.php?c=post&amp;amp;m=submit&amp;amp;link=http%3A%2F%2Fwww.lorenzobettini.it%2F2016%2F09%2Fthe-second-edition-of-the-xtext-book-has-been-published%2F&quot; rel=&quot;nofollow&quot; target=&quot;_blank&quot; title=&quot;Sphinn&quot;&gt;&lt;/a&gt;&lt;/li&gt;&lt;li style=&quot;width: 16px;&quot;&gt;&lt;a class=&quot;option1_16&quot; href=&quot;http://posterous.com/share?linkto=http%3A%2F%2Fwww.lorenzobettini.it%2F2016%2F09%2Fthe-second-edition-of-the-xtext-book-has-been-published%2F&amp;amp;title=The%20second%20edition%20of%20the%20Xtext%20book%20has%20been%20published&amp;amp;selection=The%20second%20edition%20of%20the%20Xtext%20book%2C%20Implementing%20Domain-Specific%20Languages%20with%20Xtext%20and%20Xtend%2C%20was%C2%A0published%C2%A0at%20the%20end%20of%20August%3A%C2%A0https%3A%2F%2Fwww.packtpub.com%2Fweb-development%2Fimplementing-domain-specific-languages-xtext-and-xtend-second-edition.%20&quot; rel=&quot;nofollow&quot; target=&quot;_blank&quot; title=&quot;Posterous&quot;&gt;&lt;/a&gt;&lt;/li&gt;&lt;li style=&quot;width: 16px;&quot;&gt;&lt;a class=&quot;option1_16&quot; href=&quot;http://www.tumblr.com/share?v=3&amp;amp;u=http%3A%2F%2Fwww.lorenzobettini.it%2F2016%2F09%2Fthe-second-edition-of-the-xtext-book-has-been-published%2F&amp;amp;t=The%20second%20edition%20of%20the%20Xtext%20book%20has%20been%20published&amp;amp;s=The%20second%20edition%20of%20the%20Xtext%20book%2C%20Implementing%20Domain-Specific%20Languages%20with%20Xtext%20and%20Xtend%2C%20was%C2%A0published%C2%A0at%20the%20end%20of%20August%3A%C2%A0https%3A%2F%2Fwww.packtpub.com%2Fweb-development%2Fimplementing-domain-specific-languages-xtext-and-xtend-second-edition.%20&quot; rel=&quot;nofollow&quot; target=&quot;_blank&quot; title=&quot;Tumblr&quot;&gt;&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;			
+
+			&lt;/div&gt;        
+
+		  &lt;a class=&quot;close&quot; style=&quot;cursor: pointer;&quot;&gt;
+
+		  &lt;img src=&quot;http://www.lorenzobettini.it/wp-content/plugins/sociable/images/closelabel.png&quot; title=&quot;close&quot; /&gt;
+
+		  &lt;/a&gt;
+
+		&lt;/div&gt;
+
+	&lt;/div&gt; 
+
+  &lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;sociable&quot; style=&quot;float: none;&quot;&gt;&lt;ul class=&quot;clearfix&quot;&gt;&lt;li id=&quot;Twitter_Counter&quot;&gt;&lt;a class=&quot;twitter-share-button&quot; href=&quot;https://twitter.com/share&quot;&gt;Tweet&lt;/a&gt;&lt;/li&gt;&lt;li id=&quot;Facebook_Counter&quot;&gt;&lt;/li&gt;&lt;li id=&quot;Google_p&quot;&gt;&lt;/li&gt;&lt;li id=&quot;LinkedIn_Counter&quot;&gt;&lt;/li&gt;&lt;li id=&quot;StumbleUpon_Counter&quot;&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;</description>
+	<pubDate>Mon, 05 Sep 2016 07:04:14 +0000</pubDate>
+</item>
+<item>
+	<title>Ekkehard Gentz: In 45 Minutes: from Scratch to App for Android, iOS, Windows 10</title>
+	<guid isPermaLink="false">http://ekkescorner.wordpress.com/?p=4333</guid>
+	<link>https://ekkescorner.wordpress.com/2016/09/04/in-45-minutes-from-scratch-to-app-for-android-ios-windows-10/</link>
+	<description>&lt;p&gt;As you know last months I evaluated Qt 5.7 and new Qt Quick Controls 2 for x-platform mobile App development.&lt;/p&gt;
+&lt;h1&gt;Qt Con Conference App&lt;/h1&gt;
+&lt;p&gt;You can see a first App live at Google Play, Apple App Store or Amazon App Store: Search for ‘QtCon’:&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&quot;qtcon_google_play&quot; class=&quot;alignnone wp-image-4334 size-large&quot; height=&quot;557&quot; src=&quot;https://ekkescorner.files.wordpress.com/2016/09/qtcon_google_play.png?w=550&amp;amp;h=557&quot; width=&quot;550&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;The Application is available &lt;a href=&quot;https://github.com/ekke/c2gQtCon_x&quot; target=&quot;_blank&quot;&gt;Open Source at Github&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Blog with some more details: &lt;a href=&quot;http://bit.ly/qtCon2016App&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Next Conference App for Qt World Summit in San Francisco will also be available from Windows App Store (Windows 10) and BlackBerry World (BlackBerry 10)&lt;/p&gt;
+&lt;h1&gt;Talk at Code Talks in Hamburg&lt;/h1&gt;
+&lt;p&gt;I will demonstrate the power of Qt 5.7 / Qt Quick Controls at&lt;a href=&quot;https://www.codetalks.de/2016/programm/mit-qt-quickcontrols2-in-45-minuten-vom-entwurf-zur-mobilen-app-fuer-android-und-ios&quot; target=&quot;_blank&quot;&gt; Code Talks in Hamburg&lt;/a&gt;:&lt;/p&gt;
+&lt;p&gt;in &lt;strong&gt;45 Minutes from Scratch to App&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&quot;ekke_codetalks&quot; class=&quot;alignnone wp-image-4335 size-large&quot; height=&quot;352&quot; src=&quot;https://ekkescorner.files.wordpress.com/2016/09/ekke_codetalks.png?w=550&amp;amp;h=352&quot; width=&quot;550&quot; /&gt;&lt;/p&gt;
+&lt;h1&gt;BlackBerry 10&lt;/h1&gt;
+&lt;p&gt;Perhaps you’re asking “&lt;em&gt;And what about your BlackBerry 10 Development, ekke ?&lt;/em&gt;”&lt;/p&gt;
+&lt;p&gt;Nothing has changed – I’m still developing business Apps for BlackBerry 10 – and the good thing: I can re-use most of the C++ / Qt Code for Android / iOS / W10&lt;img alt=&quot;🙂&quot; class=&quot;wp-smiley&quot; src=&quot;https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f642.png&quot; style=&quot;height: 1em;&quot; /&gt; Also App Architecture and events (Qt SIGNALS – SLOTS concept) are similar.&lt;/p&gt;&lt;br /&gt;Filed under: &lt;a href=&quot;https://ekkescorner.wordpress.com/category/bb10/&quot;&gt;BB10&lt;/a&gt;, &lt;a href=&quot;https://ekkescorner.wordpress.com/category/bb10/c/&quot;&gt;C++&lt;/a&gt;, &lt;a href=&quot;https://ekkescorner.wordpress.com/category/bb10/cascades/&quot;&gt;Cascades&lt;/a&gt;, &lt;a href=&quot;https://ekkescorner.wordpress.com/category/mobile/&quot;&gt;mobile&lt;/a&gt;, &lt;a href=&quot;https://ekkescorner.wordpress.com/category/qt/&quot;&gt;Qt&lt;/a&gt;  &lt;img alt=&quot;&quot; border=&quot;0&quot; height=&quot;1&quot; src=&quot;https://pixel.wp.com/b.gif?host=ekkescorner.wordpress.com&amp;amp;blog=7691743&amp;amp;post=4333&amp;amp;subd=ekkescorner&amp;amp;ref=&amp;amp;feed=1&quot; width=&quot;1&quot; /&gt;</description>
+	<pubDate>Sun, 04 Sep 2016 15:59:53 +0000</pubDate>
+</item>
+
+</channel>
+</rss>
