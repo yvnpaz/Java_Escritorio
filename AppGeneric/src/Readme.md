@@ -6,3 +6,8 @@
 </ul>
 
 <h6>* Ayuda para la implementación de tipos genéricos, significa "cualquier tipo de objeto". </h6>
+
+#claseGenerica
+<ul>
+  <li>Clase genérica</li>
+</ul>
