@@ -23,7 +23,7 @@
 </ul>
 
 <h5>Permiten realizar acciones para distintos tipos de datos</h5>
-  ```[Java]
+  ```[java]
   <p></p>
   public static <T> String getelementos(T [] elements);
   <p></p>
