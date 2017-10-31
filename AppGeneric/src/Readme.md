@@ -24,5 +24,5 @@
 
 <h5>Permiten realizar acciones para distintos tipos de datos</h5>
   ```[java]
-  `public static <T> String getelementos(T [] elements);`
-  `public static <T extends Comparable> T getGenerics(T[] elements);`
+  public static <T> String getelementos(T [] elements);
+  public static <T extends Comparable> T getGenerics(T[] elements);
