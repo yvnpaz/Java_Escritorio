@@ -16,3 +16,16 @@
 <ul>
   <li>ArrayList</li>
 </ul>
+
+#metodosGenericos
+<ul>
+    <li>Métodos genéricos</li>
+  <ul>
+    <li>Permiten realizar acciones para distintos tipos de datos</li>
+    <ul>
+      <li>public static <T> String getelementos(T [] elements); </li>
+      <li>public static <T extends Comparable> T getGenerics(T[] elements); </li>
+    </ul>
+  </ul>
+</ul>
+
