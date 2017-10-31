@@ -20,17 +20,9 @@
 #metodosGenericos
 <ul>
     <li>Métodos genéricos</li>
-  <ul>
-    <li>Permiten realizar acciones para distintos tipos de datos</li>
-    <ul>
-      ```[JAVA]
-      <li> public static `<T>` String getelementos(T [] elements); </li>
-      <li> public static <T extends Comparable> T getGenerics(T[] elements); </li>
-    </ul>
-  </ul>
 </ul>
 
-    <h5>Permiten realizar acciones para distintos tipos de datos</h5>
-      ```[java]
-      public static `<T>` String getelementos(T [] elements);
-      public static <T extends Comparable> T getGenerics(T[] elements);
+<h5>Permiten realizar acciones para distintos tipos de datos</h5>
+  ```[java]
+  `public static <T> String getelementos(T [] elements);`
+  `public static <T extends Comparable> T getGenerics(T[] elements);`
