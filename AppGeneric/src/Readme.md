@@ -1,30 +1,27 @@
-#generics
-<ul>
-  <li>Métodos genéricos</li>
-  <li>Tipos comodin* : ArrayList<\?> or ArrayList<\? extends Empleado></li>
-  <li>ArrayList</li>
-</ul>
+## Content ##
 
-<h6>* Ayuda para la implementación de tipos genéricos, significa "cualquier tipo de objeto". </h6>
+#### Generics
+    1. Métodos genéricos
+      * Tipos comodin* : ArrayList<\?> or ArrayList<\? extends Empleado>
+    2. ArrayList
 
-#claseGenerica
-<ul>
-  <li>Clase genérica</li>
-</ul>
+<h6>* Forma de programar implementaciones de tipos genéricos, significa "cualquier tipo de objeto". </h6>
 
-#arrayList
-<ul>
-  <li>ArrayList</li>
-</ul>
+### claseGenerica
 
-#metodosGenericos
-<ul>
-    <li>Métodos genéricos</li>
-</ul>
+  - Clase genérica
+
+### arrayList
+
+  - ArrayList
+
+### metodosGenericos
+
+  - Métodos genéricos
 
 <h5>Permiten realizar acciones para distintos tipos de datos</h5>
-  ```[javascript]
-  <p></p>
-  public static <T> String getelementos(T [] elements);
-  <p></p>
-  public static <T extends Comparable> T getGenerics(T[] elements);
+
+```
+ public static <T> String getelementos(T [] elements);
+ public static <T extends Comparable> T getGenerics(T[] elements);
+```
