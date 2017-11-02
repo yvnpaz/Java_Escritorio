@@ -1,7 +1,7 @@
 # Java_Escritorio
 Programas de consola Java
 
-  ### Appp Generic
+  ### App Generic
   1. Uso de métodos genéricos así como utilización de genéricos comodín (herencia);
 
   ### App Reloj
