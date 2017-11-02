@@ -15,3 +15,4 @@ Programas de consola Java
   
   ### P3
   1. Algoritmos importantes: viajante, prim, dijkstra.
+    * Tipos genéricos, HashMap, Vector.
