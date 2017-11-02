@@ -1,6 +1,0 @@
-INDEX VERSION 1.130+C:\Users\EXTypaz\GitHub_yvn\Java_Escritorio\.metadata\.plugins\org.eclipse.jdt.core
-2564945565.index
-407685259.index
-3901424146.index
-4103321411.index
-1904366504.index
