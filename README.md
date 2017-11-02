@@ -2,7 +2,7 @@
 Programas de consola Java
 
   ### Appp Generic
-  1. Uso de métodos genéricos así como uso de genéricos comodín (herencia);
+  1. Uso de métodos genéricos así como utilización de genéricos comodín (herencia);
 
   ### App Reloj
   1. Uso de interfaces como Listener, Event.
