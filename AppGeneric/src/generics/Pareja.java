@@ -16,6 +16,11 @@ public class Pareja<T> {
 		this.generic = generic;
 	}
 	
+	
+	/**
+	 * Todos los tipos de objetos que se le pasan al Objeto Pareja como tipo puede ejecutar este método.
+	 * @param p
+	 */
 	public static void imprimirTrabajador(Pareja<? extends Empleado> p)
 	{
 		Empleado empleado = p.getGeneric();
