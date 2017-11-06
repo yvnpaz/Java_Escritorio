@@ -6,7 +6,6 @@ import comodinAnimal.accions.AnimalTrainer;
 import comodinAnimal.animal.Animal;
 import comodinAnimal.animal.Bird;
 import comodinAnimal.animal.Cat;
-import comodinAnimal.animal.Magpie;
 
 public class AppComodin {
 	
@@ -19,7 +18,7 @@ public class AppComodin {
 		animalList.add(new Cat("cat1"));
 		animalList.add(new Bird("bird1"));
 		
-		animalTrainer.act(animalList);	//Puede compilar
+		animalTrainer.act(animalList);	//ok
 		
 		//Test 2
 		List<Cat> catList = new ArrayList<>();
@@ -27,6 +26,13 @@ public class AppComodin {
 		catList.add(new Cat("cat3"));
 		
 		animalTrainer.act(catList);		//No se puede compilar
+		/**
+		 * No compila la utlima linea por el método creado en AnimalTrainer
+		 * - public void act(List<Animal> list)
+		 * ya que deberia ser.
+		 * - public void act(List<? extends Animal> list)
+		 * asi funcionaría.
+		 */
 		
 		
 		
